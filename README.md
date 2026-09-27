@@ -24,3 +24,5 @@ vercel --prod --yes --project sleepworth
 
 - `/robots.txt` via `src/app/robots.ts`
 - `/sitemap.xml` via `src/app/sitemap.ts`
+
+Source: private GitHub repo `tygriffin045/sleepworth`, Git-connected to the Vercel project `sleepworth` (pushes to `main` deploy to production).
