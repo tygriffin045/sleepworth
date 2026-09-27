@@ -6,7 +6,7 @@ import { SITE_NAME, DEFAULT_OG_IMAGES, DEFAULT_TWITTER_IMAGES } from "@/lib/site
 export const metadata: Metadata = {
   title: "Buying guides",
   description:
-    "SleepWorth buying guides for pillows, mattress toppers, and building a quieter, darker sleep environment.",
+    "SleepWorth buying guides: Dohm vs LectroFan, sleep masks for side sleepers, bamboo vs eucalyptus sheets, pillows, mattress toppers, and a quieter, darker bedroom.",
   alternates: { canonical: "/guides" },
   openGraph: {
     images: DEFAULT_OG_IMAGES,

@@ -1,6 +1,7 @@
 import type { Guide } from "./types";
+import { buyerGuides } from "./buyerGuides";
 
-export const guides: Guide[] = [
+const editorialGuides: Guide[] = [
   {
     slug: "how-to-choose-a-pillow",
     title: "How to choose a pillow by sleep position (without guessing)",
@@ -129,6 +130,8 @@ export const guides: Guide[] = [
     ],
   },
 ];
+
+export const guides: Guide[] = [...buyerGuides, ...editorialGuides];
 
 export function getGuide(slug: string): Guide | undefined {
   return guides.find((g) => g.slug === slug);

@@ -11,6 +11,14 @@ import { hubs } from "@/data/hubs";
 import { compares } from "@/data/compares";
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGES, DEFAULT_TWITTER_IMAGES } from "@/lib/site";
 import type { RelatedLink } from "@/lib/related-content";
+import {
+  QuickPicks,
+  GuideTable,
+  GuidePicks,
+  GuideCriteria,
+  GuideFaq,
+  faqJsonLd,
+} from "@/components/BuyerGuide";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -22,19 +30,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const guide = getGuide(slug);
   if (!guide) return { title: "Guide" };
+  const metaTitle = guide.metaTitle ?? guide.title;
   return {
-    title: guide.title,
+    title: metaTitle,
     description: guide.description,
     openGraph: {
+      type: "article",
       images: DEFAULT_OG_IMAGES,
-      title: guide.title,
+      title: metaTitle,
       description: guide.description,
       url: `/guides/${slug}`,
     },
     twitter: {
       card: "summary_large_image",
       images: DEFAULT_TWITTER_IMAGES,
-      title: guide.title,
+      title: metaTitle,
       description: guide.description,
     },
     alternates: { canonical: `/guides/${slug}` },
@@ -73,6 +83,7 @@ export default async function GuidePage({ params }: Props) {
     headline: guide.title,
     description: guide.description,
     datePublished: guide.publishedAt,
+    dateModified: guide.publishedAt,
     mainEntityOfPage: guideUrl,
     author: { "@type": "Organization", name: SITE_NAME },
   };
@@ -95,9 +106,12 @@ export default async function GuidePage({ params }: Props) {
     ],
   };
 
+  const faqLd = faqJsonLd(guide);
+  const isBuyerGuide = Boolean(guide.picks?.length);
+
   return (
     <article className="space-y-10">
-      <JsonLd data={[articleLd, breadcrumbLd]} />
+      <JsonLd data={faqLd ? [articleLd, breadcrumbLd, faqLd] : [articleLd, breadcrumbLd]} />
       <header className="max-w-3xl">
         <p className="text-xs text-slate-500">
           <Link href="/guides" className="hover:text-slate-800">
@@ -110,7 +124,16 @@ export default async function GuidePage({ params }: Props) {
         </h1>
         <p className="mt-4 text-lg text-slate-600">{guide.description}</p>
         <AffiliateNote />
+        {guide.verdict && (
+          <p className="mt-6 rounded-2xl border-l-4 border-indigo-600 bg-white p-5 leading-relaxed text-slate-700 shadow-sm">
+            <span className="font-semibold text-slate-900">Short answer: </span>
+            {guide.verdict}
+          </p>
+        )}
       </header>
+
+      {isBuyerGuide && <QuickPicks guide={guide} />}
+      {isBuyerGuide && <GuideTable guide={guide} />}
 
       <div className="max-w-3xl space-y-8">
         {guide.sections.map((section) => (
@@ -123,9 +146,13 @@ export default async function GuidePage({ params }: Props) {
         ))}
       </div>
 
+      {isBuyerGuide && <GuidePicks guide={guide} />}
+      {isBuyerGuide && <GuideCriteria guide={guide} />}
+      {isBuyerGuide && <GuideFaq guide={guide} />}
+
       <RelatedNav title="Related hubs & compares" links={crossLinks} />
 
-      {mentioned.length > 0 && (
+      {!isBuyerGuide && mentioned.length > 0 && (
         <section>
           <h2 className="font-serif text-2xl text-slate-900">
             Products mentioned

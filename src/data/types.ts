@@ -60,4 +60,29 @@ export interface Guide {
   publishedAt: string;
   productSlugs: string[];
   sections: { heading: string; body: string }[];
+  /** Buyer-intent guide extras (optional). */
+  metaTitle?: string;
+  targetQuery?: string;
+  verdict?: string;
+  quickPicks?: GuideQuickPick[];
+  table?: { caption: string; columns: string[]; rows: string[][] };
+  picks?: GuidePick[];
+  criteria?: { heading: string; body: string }[];
+  faqs?: { q: string; a: string }[];
+}
+
+export interface GuideQuickPick {
+  label: string;
+  productSlug: string;
+  why: string;
+}
+
+export interface GuidePick {
+  productSlug: string;
+  label: string;
+  verdict: string;
+  pros: string[];
+  cons: string[];
+  bestFor: string;
+  skipIf: string;
 }
