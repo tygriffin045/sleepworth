@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DEFAULT_OG_IMAGES, DEFAULT_TWITTER_IMAGES } from "@/lib/site";
+import { SITE_URL, DEFAULT_OG_IMAGES, DEFAULT_TWITTER_IMAGES } from "@/lib/site";
 import { Source_Sans_3, Source_Serif_4 } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { Header } from "@/components/Header";
@@ -18,7 +18,6 @@ const serif = Source_Serif_4({
   display: "swap",
 });
 
-const SITE_URL = "https://sleepworth.vercel.app";
 const SITE_TITLE = "SleepWorth — Honest picks for better sleep";
 const SITE_DESCRIPTION =
   "Editorial sleep gear picks: pillows, toppers, sheets, protectors, weighted blankets, cooling bedding, blackout tools, sound machines, sunrise lights, and bedroom humidity.";

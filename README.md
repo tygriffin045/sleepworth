@@ -4,7 +4,7 @@ Editorial Amazon Associates picks for better sleep.
 
 **Associates tag:** `sleepworth20-20`  
 **Link format:** `https://www.amazon.com/dp/{ASIN}?tag=sleepworth20-20`  
-**Live:** https://sleepworth.vercel.app
+**Live:** https://sleep.theworthguide.com
 
 ## High-conversion routes
 
