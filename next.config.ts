@@ -20,6 +20,16 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        // Product renamed when Gravity Basics went unavailable; keep old links working.
+        source: "/products/gravity-basics-weighted-blanket",
+        destination: "/products/gravity-weighted-blanket-15lb",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

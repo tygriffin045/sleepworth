@@ -59,7 +59,7 @@ export const guides: Guide[] = [
       },
       {
         heading: "Budget ladder we actually use",
-        body: "Under ~$50: egg-crate or thin foam for a short trial. ~$50–$120: 2–3\" gel memory foam. ~$100–$250: latex when you hate memory-foam sink. $200+: TEMPUR-Adapt when you want signature conforming foam without replacing the whole bed yet. Always measure depth and buy sheets that stretch over mattress + topper.",
+        body: "Under ~$50: egg-crate or thin foam for a short trial. ~$50–$120: 2–3\" gel memory foam. ~$170–$250: natural latex (like Pure Green) when you hate memory-foam sink. $200+: TEMPUR-Adapt when you want signature conforming foam without replacing the whole bed yet. Always measure depth and buy sheets that stretch over mattress + topper.",
       },
     ],
   },
@@ -107,7 +107,7 @@ export const guides: Guide[] = [
     readingTime: "6 min read",
     publishedAt: "2026-06-08",
     productSlugs: [
-      "gravity-basics-weighted-blanket",
+      "gravity-weighted-blanket-15lb",
       "ynm-weighted-blanket-15lb",
       "cooling-weighted-blanket",
       "cooling-bamboo-sheet-set",
@@ -116,7 +116,7 @@ export const guides: Guide[] = [
     sections: [
       {
         heading: "Weight is a starting rule, not a law",
-        body: "About 10% of body weight is a common adult starting point for weighted blankets — then adjust. Gravity Basics (15 lb) is the known-brand starter we trust; YnM is the value experiment. If you already sleep hot, prioritize cooling covers or you will abandon the blanket in a week.",
+        body: "About 10% of body weight is a common adult starting point for weighted blankets — then adjust. Gravity's 15 lb blanket is the known-brand pick we trust; YnM is the value experiment. If you already sleep hot, prioritize cooling covers or you will abandon the blanket in a week.",
       },
       {
         heading: "Sheets: fiber beats thread-count theater",

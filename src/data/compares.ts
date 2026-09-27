@@ -165,9 +165,9 @@ export const compares: CompareTable[] = [
       {
         productSlug: "latex-mattress-topper-2-inch",
         bestFor: "Hot foam-haters",
-        loftOrFeel: "2\" Dunlop latex bounce",
+        loftOrFeel: "2\" soft natural Dunlop latex bounce (no cover)",
         cooling: "Usually cooler",
-        priceBand: "About $100–$250",
+        priceBand: "About $170–$200",
         skipIf: "You want maximum hug",
       },
       {
