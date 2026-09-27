@@ -71,9 +71,6 @@ export function ProductCard({
               placement="product_card"
               showHonesty={false}
             />
-            <p className="mt-1.5 text-[11px] leading-snug text-slate-500">
-              Associate link · price & shipping on Amazon
-            </p>
           </>
         )}
       </div>

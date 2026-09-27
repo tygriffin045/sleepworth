@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AffiliateNote } from "@/components/AffiliateNote";
 import Link from "next/link";
 import { categories } from "@/data/categories";
 import { getFeaturedProducts } from "@/data/products";
@@ -15,13 +16,13 @@ export const metadata: Metadata = {
     absolute: "SleepWorth — Honest picks for better sleep",
   },
   description:
-    "Editorial sleep gear: pillows, toppers, sheets, protectors, weighted blankets, cooling bedding, blackout tools, sound machines, sunrise lights, and humidity. Clear Amazon Associates disclosure — no invented scores.",
+    "Editorial sleep gear: pillows, toppers, sheets, protectors, weighted blankets, cooling bedding, blackout tools, sound machines, sunrise lights, and humidity.",
   alternates: { canonical: "/" },
   openGraph: {
     images: DEFAULT_OG_IMAGES,
     title: "SleepWorth — Honest picks for better sleep",
     description:
-      "Tradeoffs-first sleep gear picks with Amazon Associate links (tag sleepworth20-20). Start with Best for… hubs or compare tables.",
+      "Tradeoffs-first sleep gear picks. Start with Best for… hubs or compare tables.",
     url: "/",
     siteName: SITE_NAME,
     type: "website",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SleepWorth — Honest picks for better sleep",
     description:
-      "Tradeoffs-first sleep gear picks with Amazon Associate links (tag sleepworth20-20). Start with Best for… hubs or compare tables.",
+      "Tradeoffs-first sleep gear picks. Start with Best for… hubs or compare tables.",
     images: DEFAULT_TWITTER_IMAGES,
   },
 };
@@ -43,7 +44,7 @@ export default function HomePage() {
     name: SITE_NAME,
     url: SITE_URL,
     description:
-      "Editorial sleep gear picks with clear tradeoffs and Amazon Associates disclosure.",
+      "Editorial sleep gear picks with clear tradeoffs.",
   };
   const orgLd = {
     "@context": "https://schema.org",
@@ -91,15 +92,7 @@ export default function HomePage() {
               Browse all products
             </Link>
           </div>
-          <p className="mt-4 text-xs text-slate-500">
-            Amazon Associate links · tag sleepworth20-20 ·{" "}
-            <Link
-              href="/affiliate-disclosure"
-              className="underline underline-offset-2 hover:text-slate-700"
-            >
-              disclosure
-            </Link>
-          </p>
+          <AffiliateNote className="mt-4" />
         </div>
       </section>
 

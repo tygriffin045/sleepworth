@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AffiliateNote } from "@/components/AffiliateNote";
 import Link from "next/link";
 import { products } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
@@ -8,7 +9,7 @@ import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGES, DEFAULT_TWITTER_IMAGES } from "
 export const metadata: Metadata = {
   title: "All products",
   description:
-    "Browse 45 SleepWorth sleep gear picks with best-for labels and clear Amazon Associate links (tag sleepworth20-20).",
+    "Browse 45 SleepWorth sleep gear picks with best-for labels and honest tradeoffs.",
   alternates: { canonical: "/products" },
   openGraph: {
     images: DEFAULT_OG_IMAGES,
@@ -49,8 +50,9 @@ export default function ProductsPage() {
         <h1 className="font-serif text-4xl text-slate-900">All products</h1>
         <p className="mt-2 text-lg text-slate-600">
           {products.length} editorial picks — each with a use-case label, honest
-          cons, and Amazon links tagged sleepworth20-20. No invented scores.
+          cons, and a direct Amazon link. No invented scores.
         </p>
+        <AffiliateNote />
         <div className="mt-4 flex flex-wrap gap-3">
           <Link
             href="/best"

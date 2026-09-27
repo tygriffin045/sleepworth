@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { categories } from "@/data/categories";
-import { AFFILIATE_DISCLOSURE_SHORT } from "@/lib/affiliate";
+import { AMAZON_ASSOCIATE_STATEMENT } from "@/lib/affiliate";
 
 export function Footer() {
   return (
@@ -12,15 +12,6 @@ export function Footer() {
             Editorial sleep gear picks — pillows, toppers, sheets, protectors,
             weighted blankets, cooling bedding, darkness tools, sound, sunrise
             lighting, and bedroom humidity. Tradeoffs over hype.
-          </p>
-          <p className="mt-4 text-xs leading-relaxed text-indigo-300/60">
-            {AFFILIATE_DISCLOSURE_SHORT}{" "}
-            <Link
-              href="/affiliate-disclosure"
-              className="underline underline-offset-2 hover:text-indigo-100"
-            >
-              Full disclosure
-            </Link>
           </p>
         </div>
         <div>
@@ -77,8 +68,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-indigo-900 py-4 text-center text-xs text-indigo-300/40">
-        © {new Date().getFullYear()} SleepWorth. As an Amazon Associate we earn
-        from qualifying purchases. Tag: sleepworth20-20.
+        © {new Date().getFullYear()} SleepWorth. {AMAZON_ASSOCIATE_STATEMENT}
       </div>
     </footer>
   );

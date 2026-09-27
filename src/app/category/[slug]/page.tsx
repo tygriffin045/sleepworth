@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AffiliateNote } from "@/components/AffiliateNote";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { categories, getCategory } from "@/data/categories";
@@ -99,15 +100,7 @@ export default async function CategoryPage({ params }: Props) {
             Compare tables
           </Link>
         </div>
-        <p className="mt-3 text-xs text-slate-500">
-          Amazon Associate links · price &amp; shipping on Amazon ·{" "}
-          <Link
-            href="/affiliate-disclosure"
-            className="underline underline-offset-2"
-          >
-            disclosure
-          </Link>
-        </p>
+        <AffiliateNote />
       </div>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((p, i) => (

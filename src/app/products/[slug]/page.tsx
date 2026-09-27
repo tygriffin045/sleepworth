@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AffiliateNote } from "@/components/AffiliateNote";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -199,6 +200,7 @@ export default async function ProductPage({ params }: Props) {
             {product.name}
           </h1>
           <p className="mt-1 text-sm text-slate-500">{product.brand}</p>
+          <AffiliateNote className="mt-2" />
           <p className="mt-4 text-lg text-slate-600">{product.tagline}</p>
           <p className="mt-4 text-xl font-semibold text-indigo-950">
             {product.priceBand}
@@ -213,8 +215,7 @@ export default async function ProductPage({ params }: Props) {
           />
           {product.asinPlaceholder && (
             <p className="mt-3 text-xs text-amber-800">
-              ASIN may be size-variant or best-effort — confirm the live listing;
-              search links still use tag sleepworth20-20.
+              ASIN may be size-variant or best-effort — confirm the live listing.
             </p>
           )}
         </div>

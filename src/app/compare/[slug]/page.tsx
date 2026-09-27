@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AffiliateNote } from "@/components/AffiliateNote";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { compares, getCompare } from "@/data/compares";
@@ -111,15 +112,7 @@ export default async function ComparePage({ params }: Props) {
             Best for… hubs
           </Link>
         </div>
-        <p className="mt-3 text-xs text-slate-500">
-          Amazon Associate CTAs · price &amp; shipping on Amazon ·{" "}
-          <Link
-            href="/affiliate-disclosure"
-            className="underline underline-offset-2"
-          >
-            disclosure
-          </Link>
-        </p>
+        <AffiliateNote />
       </header>
 
       <div id="table" className="overflow-x-auto rounded-2xl border border-slate-200 bg-white">

@@ -21,7 +21,7 @@ const serif = Source_Serif_4({
 const SITE_URL = "https://sleepworth.vercel.app";
 const SITE_TITLE = "SleepWorth — Honest picks for better sleep";
 const SITE_DESCRIPTION =
-  "Editorial sleep gear picks: pillows, toppers, sheets, protectors, weighted blankets, cooling bedding, blackout tools, sound machines, sunrise lights, and bedroom humidity. Clear Amazon Associates disclosure — no invented scores.";
+  "Editorial sleep gear picks: pillows, toppers, sheets, protectors, weighted blankets, cooling bedding, blackout tools, sound machines, sunrise lights, and bedroom humidity.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

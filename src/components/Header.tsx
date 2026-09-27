@@ -183,7 +183,7 @@ export function Header() {
                   ))}
                 </div>
                 <div className="mt-4 flex items-center justify-between border-t border-slate-100 pt-3 text-xs text-slate-500">
-                  <span>Amazon Associate links · no invented scores</span>
+                  <span>Tradeoffs first · no invented scores</span>
                   <Link data-shop-link href="/products" className="font-semibold text-indigo-800 underline underline-offset-2" onClick={() => setShopOpen(false)}>
                     See all 45 picks →
                   </Link>

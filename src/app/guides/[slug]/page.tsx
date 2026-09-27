@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AffiliateNote } from "@/components/AffiliateNote";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getGuide, guides } from "@/data/guides";
@@ -108,6 +109,7 @@ export default async function GuidePage({ params }: Props) {
           {guide.title}
         </h1>
         <p className="mt-4 text-lg text-slate-600">{guide.description}</p>
+        <AffiliateNote />
       </header>
 
       <div className="max-w-3xl space-y-8">
@@ -128,9 +130,6 @@ export default async function GuidePage({ params }: Props) {
           <h2 className="font-serif text-2xl text-slate-900">
             Products mentioned
           </h2>
-          <p className="mt-1 text-sm text-slate-600">
-            Affiliate links use our Amazon Associates tag (sleepworth20-20).
-          </p>
           <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {mentioned.map((p) => (
               <ProductCard key={p.slug} product={p} />

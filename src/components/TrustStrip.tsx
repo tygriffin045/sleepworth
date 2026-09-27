@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export function TrustStrip() {
   return (
     <section className="rounded-2xl border border-indigo-100 bg-indigo-50/70 p-6 sm:p-8">
@@ -12,12 +10,6 @@ export function TrustStrip() {
             Tradeoffs first. Scores never.
           </h2>
         </div>
-        <Link
-          href="/affiliate-disclosure"
-          className="text-sm font-medium text-indigo-800 underline underline-offset-4"
-        >
-          Read our FTC disclosure →
-        </Link>
       </div>
       <div className="mt-6 grid gap-5 sm:grid-cols-3">
         <div>
@@ -41,11 +33,11 @@ export function TrustStrip() {
         </div>
         <div>
           <p className="text-sm font-semibold text-indigo-950">
-            Clear Amazon links
+            No invented scores
           </p>
           <p className="mt-1 text-sm text-slate-600">
-            Associates tag sleepworth20-20 on every link. No invented 9.7/10
-            brand scores. You pay the same price.
+            No 9.7/10 brand scores or fake star ratings — just the tradeoffs we
+            would tell a friend before they buy.
           </p>
         </div>
       </div>

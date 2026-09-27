@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AffiliateNote } from "@/components/AffiliateNote";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getHub, hubs } from "@/data/hubs";
@@ -110,16 +111,7 @@ export default async function HubPage({ params }: Props) {
             Open compare tables
           </Link>
         </div>
-        <p className="mt-3 text-xs text-slate-500">
-          Amazon Associate links (tag sleepworth20-20) · price &amp; shipping on
-          Amazon ·{" "}
-          <Link
-            href="/affiliate-disclosure"
-            className="underline underline-offset-2"
-          >
-            disclosure
-          </Link>
-        </p>
+        <AffiliateNote />
       </header>
 
       <div className="max-w-3xl space-y-4">

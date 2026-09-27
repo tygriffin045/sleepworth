@@ -28,4 +28,7 @@ export function getAffiliateUrl(target: string | AffiliateTarget): string {
 }
 
 export const AFFILIATE_DISCLOSURE_SHORT =
-  "As an Amazon Associate, SleepWorth earns from qualifying purchases.";
+  "We may earn a commission from qualifying purchases.";
+
+export const AMAZON_ASSOCIATE_STATEMENT =
+  "As an Amazon Associate I earn from qualifying purchases.";

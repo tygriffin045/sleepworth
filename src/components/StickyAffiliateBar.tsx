@@ -30,7 +30,7 @@ export function StickyAffiliateBar({
             {productName}
           </p>
           <p className="text-xs text-slate-500">
-            {priceBand} · Amazon Associate link · price &amp; shipping on Amazon
+            {priceBand}
           </p>
         </div>
         <a

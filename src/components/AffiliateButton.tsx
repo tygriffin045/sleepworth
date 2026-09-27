@@ -10,7 +10,8 @@ export function AffiliateButton({
   amazonQuery,
   className = "",
   placement = "inline",
-  showHonesty = true,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  showHonesty = false,
 }: {
   productSlug: string;
   productName: string;
@@ -44,13 +45,6 @@ export function AffiliateButton({
       >
         Check price on Amazon
       </a>
-      {showHonesty && (
-        <p className="mt-2 text-xs leading-relaxed text-slate-500">
-          Amazon Associate link · We may earn a commission at no extra cost to
-          you. Price, shipping, and returns are set by Amazon or the seller on
-          the listing — we do not control them.
-        </p>
-      )}
       <span className="sr-only">{productName}</span>
     </div>
   );
