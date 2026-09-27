@@ -1,0 +1,301 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import {
+  getProduct,
+  getRelatedProducts,
+  products,
+} from "@/data/products";
+import { getCategory } from "@/data/categories";
+import { AffiliateButton } from "@/components/AffiliateButton";
+import { StickyAffiliateBar } from "@/components/StickyAffiliateBar";
+import { ProductCard } from "@/components/ProductCard";
+import { RelatedNav } from "@/components/RelatedNav";
+import { JsonLd } from "@/components/JsonLd";
+import { getAffiliateUrl } from "@/lib/affiliate";
+import { getRelatedForProduct } from "@/lib/related-content";
+import { SITE_URL, SITE_NAME } from "@/lib/site";
+
+type Props = { params: Promise<{ slug: string }> };
+
+export async function generateStaticParams() {
+  return products.map((p) => ({ slug: p.slug }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const product = getProduct(slug);
+  if (!product) return { title: "Product" };
+  const title = `${product.name} — ${product.bestFor}`;
+  const description = `${product.tagline} ${product.whoItsFor} Editorial SleepWorth pick with clear tradeoffs — no invented scores.`;
+  const images = product.imageUrl
+    ? [{ url: product.imageUrl, alt: product.imageAlt }]
+    : undefined;
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `/products/${slug}`,
+      type: "website",
+      siteName: SITE_NAME,
+      images,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: product.imageUrl ? [product.imageUrl] : undefined,
+    },
+    alternates: { canonical: `/products/${slug}` },
+  };
+}
+
+export default async function ProductPage({ params }: Props) {
+  const { slug } = await params;
+  const product = getProduct(slug);
+  if (!product) notFound();
+
+  const category = getCategory(product.category);
+  const related = getRelatedProducts(product).filter(Boolean);
+  const editorialLinks = getRelatedForProduct(product.slug);
+  const productUrl = `${SITE_URL}/products/${product.slug}`;
+  const amazonUrl = getAffiliateUrl({
+    slug: product.slug,
+    amazonAsin: product.amazonAsin,
+    amazonQuery: product.amazonQuery,
+  });
+  const imageAbs = product.imageUrl
+    ? product.imageUrl.startsWith("http")
+      ? product.imageUrl
+      : `${SITE_URL}${product.imageUrl}`
+    : undefined;
+
+  // Product JSON-LD: real brand/name/image; AggregateOffer uses our editorial
+  // price band only — no fake ratings or invented InStock claims.
+  const productLd: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    description: product.summary,
+    brand: { "@type": "Brand", name: product.brand },
+    ...(imageAbs ? { image: [imageAbs] } : {}),
+    ...(product.amazonAsin ? { sku: product.amazonAsin } : {}),
+    offers: {
+      "@type": "AggregateOffer",
+      url: amazonUrl,
+      priceCurrency: "USD",
+      lowPrice: String(product.priceMin),
+      highPrice: String(product.priceMax),
+      offerCount: 1,
+    },
+  };
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Products",
+        item: `${SITE_URL}/products`,
+      },
+      ...(category
+        ? [
+            {
+              "@type": "ListItem" as const,
+              position: 2,
+              name: category.name,
+              item: `${SITE_URL}/category/${category.slug}`,
+            },
+            {
+              "@type": "ListItem" as const,
+              position: 3,
+              name: product.name,
+              item: productUrl,
+            },
+          ]
+        : [
+            {
+              "@type": "ListItem" as const,
+              position: 2,
+              name: product.name,
+              item: productUrl,
+            },
+          ]),
+    ],
+  };
+
+  return (
+    <div className="space-y-12 pb-28">
+      <JsonLd data={[productLd, breadcrumbLd]} />
+      <StickyAffiliateBar
+        productSlug={product.slug}
+        productName={product.name}
+        amazonAsin={product.amazonAsin}
+        amazonQuery={product.amazonQuery}
+        priceBand={product.priceBand}
+      />
+      <nav className="text-sm text-slate-500">
+        <Link href="/products" className="hover:text-slate-800">
+          Products
+        </Link>
+        <span className="mx-2">/</span>
+        {category && (
+          <>
+            <Link
+              href={`/category/${category.slug}`}
+              className="hover:text-slate-800"
+            >
+              {category.name}
+            </Link>
+            <span className="mx-2">/</span>
+          </>
+        )}
+        <span className="text-slate-700">{product.name}</span>
+      </nav>
+      <div className="grid gap-8 lg:grid-cols-2">
+        <div
+          className={`relative aspect-square overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br ${product.imageGradient}`}
+        >
+          {product.imageUrl ? (
+            <Image
+              src={product.imageUrl}
+              alt={product.imageAlt}
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-contain p-8"
+              priority
+            />
+          ) : (
+            <div className="flex h-full items-center justify-center p-8 text-center text-slate-500">
+              <p className="text-sm">
+                <span className="font-medium text-slate-700">
+                  {product.name}
+                </span>
+                <br />
+                Check the live Amazon listing for current photos and pricing.
+              </p>
+            </div>
+          )}
+        </div>
+
+        <div>
+          {category && (
+            <Link
+              href={`/category/${category.slug}`}
+              className="text-xs font-semibold uppercase tracking-wider text-indigo-700 hover:underline"
+            >
+              {category.name}
+            </Link>
+          )}
+          <p className="mt-3 inline-flex rounded-full bg-indigo-100 px-3 py-1 text-xs font-semibold text-indigo-900">
+            {product.bestFor}
+          </p>
+          <h1 className="mt-3 font-serif text-3xl text-slate-900 sm:text-4xl">
+            {product.name}
+          </h1>
+          <p className="mt-1 text-sm text-slate-500">{product.brand}</p>
+          <p className="mt-4 text-lg text-slate-600">{product.tagline}</p>
+          <p className="mt-4 text-xl font-semibold text-indigo-950">
+            {product.priceBand}
+          </p>
+          <AffiliateButton
+            className="mt-6"
+            productSlug={product.slug}
+            productName={product.name}
+            amazonAsin={product.amazonAsin}
+            amazonQuery={product.amazonQuery}
+            placement="product_hero"
+          />
+          {product.asinPlaceholder && (
+            <p className="mt-3 text-xs text-amber-800">
+              ASIN may be size-variant or best-effort — confirm the live listing;
+              search links still use tag sleepworth20-20.
+            </p>
+          )}
+        </div>
+      </div>
+
+      <section className="grid gap-8 md:grid-cols-2">
+        <div>
+          <h2 className="font-serif text-2xl text-slate-900">Our take</h2>
+          <p className="mt-3 leading-relaxed text-slate-600">
+            {product.summary}
+          </p>
+          <p className="mt-4 text-sm text-slate-600">
+            <span className="font-semibold text-slate-800">Who it&apos;s for: </span>
+            {product.whoItsFor}
+          </p>
+          <p className="mt-2 text-sm text-slate-600">
+            <span className="font-semibold text-slate-800">Skip if: </span>
+            {product.skipIf}
+          </p>
+        </div>
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-500">
+              Pros
+            </h3>
+            <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
+              {product.pros.map((pro) => (
+                <li key={pro}>{pro}</li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-500">
+              Cons
+            </h3>
+            <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-600">
+              {product.cons.map((con) => (
+                <li key={con}>{con}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="font-serif text-2xl text-slate-900">Specs</h2>
+        <dl className="mt-4 divide-y divide-slate-200 rounded-2xl border border-slate-200 bg-white">
+          {product.specs.map((spec) => (
+            <div
+              key={spec.label}
+              className="flex flex-col gap-1 px-4 py-3 sm:flex-row sm:justify-between"
+            >
+              <dt className="text-sm text-slate-500">{spec.label}</dt>
+              <dd className="text-sm font-medium text-slate-800">
+                {spec.value}
+              </dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
+      <RelatedNav
+        title="Hubs, compares & guides"
+        links={editorialLinks}
+      />
+
+      {related.length > 0 && (
+        <section>
+          <h2 className="font-serif text-2xl text-slate-900">
+            Compare nearby picks
+          </h2>
+          <p className="mt-1 text-sm text-slate-600">
+            Alternatives with different tradeoffs — not clones of the same pitch.
+          </p>
+          <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {related.map((p) => (
+              <ProductCard key={p.slug} product={p} />
+            ))}
+          </div>
+        </section>
+      )}
+    </div>
+  );
+}
