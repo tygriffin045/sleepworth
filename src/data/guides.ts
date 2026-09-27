@@ -91,7 +91,7 @@ export const guides: Guide[] = [
       },
       {
         heading: "Cool air and sane humidity",
-        body: "Cool the room before you buy another cooling sheet SKU. In dry winters, a quiet humidifier with a real sleep mode (Levoit LV600S or a simple Honeywell top-fill) protects throats — if you will clean it. Dirty humidifiers are a health problem, not a sleep upgrade.",
+        body: "Cool the room before you buy another cooling sheet SKU. In dry winters, a quiet humidifier with a real sleep mode (Levoit LV600S or the simple manual Honeywell Designer Series) protects throats — if you will clean it. Dirty humidifiers are a health problem, not a sleep upgrade.",
       },
       {
         heading: "Starter kit we recommend most often",
