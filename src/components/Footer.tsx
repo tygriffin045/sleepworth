@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="mt-24 border-t border-indigo-900/30 bg-indigo-950 text-indigo-100/80">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3">
         <div>
-          <p className="font-serif text-2xl text-[#f4f6fb]">SleepWorth</p>
+          <p className="font-serif text-2xl text-[#f4f6fb]">Sleep<span className="text-[#d4af37]">Worth</span></p>
           <p className="mt-2 text-sm text-indigo-200/70">
             Editorial sleep gear picks — pillows, toppers, sheets, protectors,
             weighted blankets, cooling bedding, darkness tools, sound, sunrise
