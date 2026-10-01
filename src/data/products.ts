@@ -1154,7 +1154,29 @@ export const products: Product[] = [
     specs: [{ label: "Type", value: "Silicone" }],
     relatedSlugs: [],
   },
+,
 
+  {
+    slug: "loop-quiet",
+    name: "Loop Quiet earplugs",
+    brand: "Loop",
+    category: "sleep-masks",
+    tagline: "Reusable earplugs for a noisy room.",
+    summary: "A mask blocks light. These block the rest.",
+    priceBand: "About $25",
+    budget: "budget",
+    priceMin: 20,
+    priceMax: 30,
+    imageGradient: "from-stone-200 to-slate-100",
+    imageAlt: "Loop Quiet earplugs",
+    featured: false,
+    pros: ["Reusable", "Smaller than foam"],
+    cons: ["Not full silence", "Fit varies"],
+    whoItsFor: "Light sleepers who already have a mask.",
+    specs: [{ label: "Type", value: "Earplug" }],
+    relatedSlugs: [],
+    amazonQuery: "Loop Quiet earplugs",
+  }
 ];
 
 export function getProduct(slug: string): Product | undefined {
