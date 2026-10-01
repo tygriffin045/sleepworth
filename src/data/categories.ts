@@ -75,4 +75,11 @@ export const categories: Category[] = [
 
 export function getCategory(slug: string): Category | undefined {
   return categories.find((c) => c.slug === slug);
-}
+,
+  {
+    slug: "earplugs",
+    name: "Earplugs",
+    shortLabel: "Earplugs",
+    description: "Reusable and foam earplugs for partners, travel, and apartments with thin walls.",
+  },
+];
