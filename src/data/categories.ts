@@ -70,6 +70,12 @@ export const categories: Category[] = [
     shortLabel: "Air",
     description:
       "Bedroom humidity and quiet mist when dry air wrecks your throat at 3 a.m. We stick to sleep-framed humidifiers with real sleep modes — not whole-house HVAC projects.",
+  },,
+  {
+    slug: "sleep-masks",
+    name: "Sleep Masks",
+    shortLabel: "Masks",
+    description: "Masks and plugs for light and noise the room will not give up.",
   },
 ];
 
