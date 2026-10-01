@@ -8,7 +8,8 @@ export type CategorySlug =
   | "blackout-curtains-masks"
   | "white-noise-sound-machines"
   | "bedtime-lighting"
-  | "sleep-air-humidity";
+  | "sleep-air-humidity"
+  | "earplugs";
 
 export type BudgetBand = "budget" | "mid" | "premium";
 
