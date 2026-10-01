@@ -1132,6 +1132,29 @@ export const products: Product[] = [
     amazonAsin: "B07VVK39F7",
     amazonQuery: "LEVOIT Core 300-P Air Purifier",
   },
+
+  {
+    slug: "loop-quiet-earplugs",
+    name: "Loop Quiet earplugs",
+    brand: "Loop",
+    category: "earplugs",
+    tagline: "Reusable silicone plugs for sleep",
+    summary: "A reusable plug for a partner who snores or a street that does not. Foam still blocks more if that is the only goal.",
+    priceBand: "About $20",
+    budget: "budget",
+    priceMin: 15,
+    priceMax: 25,
+    imageGradient: "from-stone-600 via-slate-700 to-stone-800",
+    imageAlt: "Loop Quiet earplugs",
+    featured: false,
+    amazonQuery: "Loop Quiet earplugs",
+    pros: ["Reusable", "Easier to sleep on than foam for some people", "Comes with sizes"],
+    cons: ["Blocks less than foam", "Can fall out", "Not a sound machine"],
+    whoItsFor: "Side sleepers who hate disposable foam.",
+    specs: [{ label: "Type", value: "Silicone" }],
+    relatedSlugs: [],
+  },
+
 ];
 
 export function getProduct(slug: string): Product | undefined {
