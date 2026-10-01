@@ -7,6 +7,7 @@ import { guides } from "@/data/guides";
 import { hubs } from "@/data/hubs";
 import { compares } from "@/data/compares";
 import { ProductCard } from "@/components/ProductCard";
+import { TopRail } from "@/components/TopRail";
 import { TrustStrip } from "@/components/TrustStrip";
 import { JsonLd } from "@/components/JsonLd";
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGES, DEFAULT_TWITTER_IMAGES } from "@/lib/site";
@@ -95,6 +96,8 @@ export default function HomePage() {
           <AffiliateNote className="mt-4" />
         </div>
       </section>
+
+      <TopRail />
 
       <section>
         <div className="flex items-end justify-between gap-4">
