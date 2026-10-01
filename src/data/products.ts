@@ -1175,6 +1175,8 @@ export const products: Product[] = [
     whoItsFor: "Light sleepers who already have a mask.",
     specs: [{ label: "Type", value: "Earplug" }],
     relatedSlugs: [],
+    amazonAsin: "B0D3V61JC8",
+    imageUrl: "https://m.media-amazon.com/images/P/B0D3V61JC8.01._SCLZZZZZZZ_.jpg",
     amazonQuery: "Loop Quiet earplugs",
   }
 ];
