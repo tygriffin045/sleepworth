@@ -1,4 +1,5 @@
 export type CategorySlug =
+  | "sleep-masks"
   | "pillows"
   | "mattress-toppers"
   | "sheets-bedding"
