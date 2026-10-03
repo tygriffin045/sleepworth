@@ -70,18 +70,13 @@ export const categories: Category[] = [
     shortLabel: "Air",
     description:
       "Bedroom humidity and quiet mist when dry air wrecks your throat at 3 a.m. We stick to sleep-framed humidifiers with real sleep modes — not whole-house HVAC projects.",
-  },,
+  },
   {
     slug: "sleep-masks",
     name: "Sleep Masks",
     shortLabel: "Masks",
     description: "Masks and plugs for light and noise the room will not give up.",
   },
-];
-
-export function getCategory(slug: string): Category | undefined {
-  return categories.find((c) => c.slug === slug);
-,
   {
     slug: "earplugs",
     name: "Earplugs",
@@ -89,3 +84,7 @@ export function getCategory(slug: string): Category | undefined {
     description: "Reusable and foam earplugs for partners, travel, and apartments with thin walls.",
   },
 ];
+
+export function getCategory(slug: string): Category | undefined {
+  return categories.find((c) => c.slug === slug);
+}
