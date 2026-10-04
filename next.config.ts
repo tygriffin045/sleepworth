@@ -22,6 +22,7 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      { source: "/products/egg-crate-foam-topper", destination: "/category/mattress-toppers", permanent: true },
       { source: "/categories/:slug", destination: "/category/:slug", permanent: true },
       {
         // Product renamed when Gravity Basics went unavailable; keep old links working.

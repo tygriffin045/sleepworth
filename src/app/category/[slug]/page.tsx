@@ -3,7 +3,7 @@ import { AffiliateNote } from "@/components/AffiliateNote";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { categories, getCategory } from "@/data/categories";
-import { getProductsByCategory } from "@/data/products";
+import { getTopPicks } from "@/data/top10";
 import { ProductCard } from "@/components/ProductCard";
 import { RelatedNav } from "@/components/RelatedNav";
 import { JsonLd } from "@/components/JsonLd";
@@ -48,7 +48,7 @@ export default async function CategoryPage({ params }: Props) {
   const category = getCategory(slug);
   if (!category) notFound();
 
-  const items = getProductsByCategory(slug);
+  const items = getTopPicks(slug);
   const related = getRelatedForCategory(category.slug);
   const listUrl = `${SITE_URL}/category/${category.slug}`;
   const itemListLd = {
@@ -80,7 +80,7 @@ export default async function CategoryPage({ params }: Props) {
           {category.description}
         </p>
         <p className="mt-2 text-sm text-slate-500">
-          {items.length} product{items.length === 1 ? "" : "s"} · each card
+          Top {items.length} picks · each card
           carries a &quot;best for&quot; label ·{" "}
           <Link href="/products" className="underline underline-offset-2">
             View all
