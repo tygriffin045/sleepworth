@@ -45,6 +45,7 @@ const topLinks = [
   { href: "/compare", label: "Compare" },
   { href: "/guides", label: "Guides" },
   { href: "/products", label: "All products" },
+  { href: "https://theworthguide.com/", label: "The Worth Guide" },
 ];
 
 function Chevron({ open }: { open: boolean }) {
@@ -64,6 +65,7 @@ function Chevron({ open }: { open: boolean }) {
 
 export function Header() {
   const pathname = usePathname();
+  const isActive = (h: string) => h.startsWith("/") && (pathname === h || pathname.startsWith(h + "/"));
   const [shopOpen, setShopOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const shopId = useId();
@@ -132,7 +134,7 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
         <Link href="/" className="flex shrink-0 items-baseline gap-2">
           <span className="font-serif text-xl font-semibold tracking-tight text-slate-900 sm:text-2xl">
-            <svg aria-hidden viewBox="0 0 24 24" className="mr-1.5 inline h-5 w-5 align-[-2px]" fill="none" stroke="#d4af37" strokeWidth="1.8"><circle cx="12" cy="12" r="9"/><path d="M7.5 12.2 10.6 15.3 16.5 8.8" strokeLinecap="round" strokeLinejoin="round"/></svg>Sleep<span className="text-[#d4af37]">Worth</span>
+            <svg aria-hidden viewBox="0 0 24 24" className="mr-1.5 inline h-5 w-5 align-[-2px]" fill="none" stroke="#d4af37" strokeWidth="1.8"><circle cx="12" cy="12" r="9"/><path d="M7.5 12.2 10.6 15.3 16.5 8.8" strokeLinecap="round" strokeLinejoin="round"/></svg>Sleep<span className="text-[#8a6a22]">Worth</span>
           </span>
           <span className="hidden whitespace-nowrap text-xs text-slate-500 sm:inline">
             sleep gear, edited
@@ -192,7 +194,7 @@ export function Header() {
             )}
           </div>
           {topLinks.map((l) => (
-            <Link key={l.href} href={l.href} className={navLink}>
+            <Link key={l.href} href={l.href} aria-current={isActive(l.href) ? "page" : undefined} className={isActive(l.href) ? navLink + " bg-indigo-950 text-white hover:bg-indigo-950 hover:text-white" : navLink}>
               {l.label}
             </Link>
           ))}
@@ -239,11 +241,12 @@ export function Header() {
           aria-label="Mobile"
           className="max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-slate-200 bg-[#f4f6fb] px-4 pb-6 pt-3 lg:hidden"
         >
-          <ul className="grid grid-cols-3 gap-2">
+          <ul className="grid grid-cols-2 gap-2">
             {topLinks.map((l) => (
               <li key={l.href}>
                 <Link
                   href={l.href}
+                  aria-current={isActive(l.href) ? "page" : undefined}
                   className="flex min-h-11 items-center justify-center rounded-xl border border-slate-200 bg-white px-2 text-center text-sm font-semibold text-slate-900"
                 >
                   {l.label}
