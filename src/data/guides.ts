@@ -60,7 +60,7 @@ const editorialGuides: Guide[] = [
       },
       {
         heading: "Budget ladder we actually use",
-        body: "Under ~$50: egg-crate or thin foam for a short trial. ~$50–$120: 2–3\" gel memory foam. ~$170–$250: natural latex (like Pure Green) when you hate memory-foam sink. $200+: TEMPUR-Adapt when you want signature conforming foam without replacing the whole bed yet. Always measure depth and buy sheets that stretch over mattress + topper.",
+        body: "Budget: egg-crate or thin foam for a short trial. Mid-range: 2–3\" gel memory foam. Higher: natural latex (like Pure Green) when you hate memory-foam sink. Top end: TEMPUR-Adapt when you want signature conforming foam without replacing the whole bed yet. Always measure depth and buy sheets that stretch over mattress + topper.",
       },
     ],
   },

@@ -29,9 +29,6 @@ export function StickyAffiliateBar({
           <p className="truncate text-sm font-semibold text-slate-900">
             {productName}
           </p>
-          <p className="text-xs text-slate-500">
-            {priceBand}
-          </p>
         </div>
         <a
           href={href}

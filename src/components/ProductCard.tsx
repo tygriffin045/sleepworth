@@ -57,9 +57,6 @@ export function ProductCard({
         <p className="mt-1 line-clamp-2 text-sm text-slate-600">
           {product.tagline}
         </p>
-        <p className="mt-3 text-sm font-medium text-indigo-950">
-          {product.priceBand}
-        </p>
         {showAffiliateCta && (
           <>
             <AffiliateButton

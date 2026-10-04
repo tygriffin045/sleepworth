@@ -176,7 +176,7 @@ export const compares: CompareTable[] = [
         loftOrFeel: "~3\" conforming",
         cooling: "Cover helps; foam still hugs",
         priceBand: "About $200–$450+",
-        skipIf: "Budget under $150",
+        skipIf: "On a tighter budget",
       },
     ],
     verdict:

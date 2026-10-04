@@ -47,8 +47,7 @@ export default function AffiliateDisclosurePage() {
         with the same tag.
       </p>
       <p className="text-slate-600">
-        Prices shown as bands (for example, &quot;About $70–$90&quot;) are
-        approximate and change frequently on Amazon. Always check the live
+        We do not show prices because they change frequently on Amazon. Always check the live
         Amazon listing for current pricing, availability, and shipping.
       </p>
       <p className="text-slate-600">

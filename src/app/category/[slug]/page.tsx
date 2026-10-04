@@ -9,6 +9,7 @@ import { RelatedNav } from "@/components/RelatedNav";
 import { JsonLd } from "@/components/JsonLd";
 import { getRelatedForCategory } from "@/lib/related-content";
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGES, DEFAULT_TWITTER_IMAGES } from "@/lib/site";
+import { BadgePicks } from "@/components/BadgePicks";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -102,6 +103,7 @@ export default async function CategoryPage({ params }: Props) {
         </div>
         <AffiliateNote />
       </div>
+      <BadgePicks category={slug} />
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((p, i) => (
           <ProductCard key={p.slug} product={p} priority={i < 3} />

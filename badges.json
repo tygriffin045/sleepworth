@@ -1,0 +1,1289 @@
+{
+ "generated": "2026-10-04",
+ "method": "Premium = highest-priced well-regarded (rating>=4.3, 50+ ratings) in-stock Top 10 item; Value = lowest-priced well-regarded; Bang for the Buck = middle price band, Amazon Best Seller preferred, then rating. Prices are live amazon.com buy-box prices on the checked date.",
+ "pages": {
+  "pillows": {
+   "site": "sleepworth",
+   "page": "pillows",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0CXXM1XX5",
+     "slug": "jollyvogue-pillows-queen-size-set-of",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0DPMS4MWR",
+     "slug": "sasttie-firm-pillows-queen-size-set",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B08DTH86Q2",
+     "slug": "utopia-bedding-gusset-bed-pillow",
+     "price": 29.89,
+     "rating": 4.5,
+     "ratings": 79946,
+     "bestseller": true
+    },
+    {
+     "asin": "B0993G154N",
+     "slug": "eli-elm-contoured-pillow",
+     "price": 54.99,
+     "rating": 4.3,
+     "ratings": 12015,
+     "bestseller": false
+    },
+    {
+     "asin": "B01LYNW421",
+     "slug": "beckham-hotel-collection-pillows",
+     "price": 59.99,
+     "rating": 4.3,
+     "ratings": 264498,
+     "bestseller": true
+    },
+    {
+     "asin": "B085HMVQGP",
+     "slug": "tempur-pedic-tempur-cloud-pillow",
+     "price": 71.4,
+     "rating": 4.3,
+     "ratings": 7584,
+     "bestseller": false
+    },
+    {
+     "asin": "B00EINBSEW",
+     "slug": "coop-original-adjustable-pillow",
+     "price": 89.0,
+     "rating": 4.5,
+     "ratings": 63995,
+     "bestseller": true
+    },
+    {
+     "asin": "B01LYU7V4S",
+     "slug": "coop-eden-pillow",
+     "price": 109.0,
+     "rating": 4.4,
+     "ratings": 15183,
+     "bestseller": true
+    },
+    {
+     "asin": "B0BQRBQ6C5",
+     "slug": "coop-eden-cool-plus",
+     "price": 149.0,
+     "rating": 4.4,
+     "ratings": 15183,
+     "bestseller": false
+    },
+    {
+     "asin": "B097RWFXZM",
+     "slug": "purple-harmony-pillow",
+     "price": 194.0,
+     "rating": 4.2,
+     "ratings": 7139,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "2 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B0BQRBQ6C5",
+     "slug": "coop-eden-cool-plus",
+     "name": "Coop Eden Cool+ Adjustable Pillow",
+     "price": 149.0,
+     "line": "Among the highest-end picks in this Top 10 \u2014 queen size plus shaped memory foam pillows, cooling gel."
+    },
+    "bang": {
+     "asin": "B00EINBSEW",
+     "slug": "coop-original-adjustable-pillow",
+     "name": "Coop Home Goods Original Adjustable Pillow",
+     "price": 89.0,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 queen size bed pillow for sleeping, cross cut memory foam pillow."
+    },
+    "value": {
+     "asin": "B08DTH86Q2",
+     "slug": "utopia-bedding-gusset-bed-pillow",
+     "name": "Utopia Bedding Gusset Bed Pillow",
+     "price": 29.89,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 hotel pillows queen size set of 2."
+    }
+   }
+  },
+  "mattress-toppers": {
+   "site": "sleepworth",
+   "page": "mattress-toppers",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0D3D5LKG9",
+     "slug": "bedlore-queen-mattress-topper",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CWLPPVJM",
+     "slug": "niagara-sleep-solution-100-cotton-top",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B0GZSN517J",
+     "slug": "olixis-2-inch-twin-cooling-gel",
+     "price": 17.98,
+     "rating": 4.4,
+     "ratings": 1553,
+     "bestseller": true
+    },
+    {
+     "asin": "B09DCSGK84",
+     "slug": "sinweek-2-inch-gel-memory-foam",
+     "price": 28.49,
+     "rating": 4.4,
+     "ratings": 5703,
+     "bestseller": true
+    },
+    {
+     "asin": "B09TZNTGBK",
+     "slug": "mlily-ego-3-inch-queen-mattress",
+     "price": 41.24,
+     "rating": 4.3,
+     "ratings": 2328,
+     "bestseller": true
+    },
+    {
+     "asin": "B01MYN9K5B",
+     "slug": "linenspa-2-inch-gel-memory-foam-topper",
+     "price": 59.99,
+     "rating": 4.5,
+     "ratings": 74922,
+     "bestseller": false
+    },
+    {
+     "asin": "B0GRYD7MWL",
+     "slug": "whatsbedding-4-inch-memory-foam-mattress",
+     "price": 59.99,
+     "rating": 4.3,
+     "ratings": 2421,
+     "bestseller": true
+    },
+    {
+     "asin": "B07MY34QH7",
+     "slug": "linenspa-3-inch-gel-memory-foam-topper",
+     "price": 69.99,
+     "rating": 4.4,
+     "ratings": 59627,
+     "bestseller": true
+    },
+    {
+     "asin": "B00UYG8F7U",
+     "slug": "latex-mattress-topper-2-inch",
+     "price": 179.0,
+     "rating": 4.3,
+     "ratings": 3734,
+     "bestseller": false
+    },
+    {
+     "asin": "B00HEODIZY",
+     "slug": "tempur-adapt-cooling-topper",
+     "price": 259.0,
+     "rating": 4.1,
+     "ratings": 12446,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "2 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B00UYG8F7U",
+     "slug": "latex-mattress-topper-2-inch",
+     "name": "Pure Green 2-Inch Natural Latex Mattress Topper (Soft, Queen)",
+     "price": 179.0,
+     "line": "Among the highest-end picks in this Top 10 \u2014 2 inch, queen size."
+    },
+    "bang": {
+     "asin": "B07MY34QH7",
+     "slug": "linenspa-3-inch-gel-memory-foam-topper",
+     "name": "Linenspa 3-Inch Gel Memory Foam Topper",
+     "price": 69.99,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 queen size."
+    },
+    "value": {
+     "asin": "B0GZSN517J",
+     "slug": "olixis-2-inch-twin-cooling-gel",
+     "name": "OLIXIS 2 Inch Twin Cooling Gel Infused Memory Foam Mattress",
+     "price": 17.98,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 bed pad."
+    }
+   }
+  },
+  "sheets-bedding": {
+   "site": "sleepworth",
+   "page": "sheets-bedding",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0F2S5K14M",
+     "slug": "beckham-hotel-collection-sheets",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B0154ASID6",
+     "slug": "amazon-basics-lightweight-super-soft-breathable",
+     "price": 14.68,
+     "rating": 4.5,
+     "ratings": 479318,
+     "bestseller": true
+    },
+    {
+     "asin": "B00NX0WXQI",
+     "slug": "utopia-bedding-queen-sheets-set",
+     "price": 15.19,
+     "rating": 4.6,
+     "ratings": 244288,
+     "bestseller": true
+    },
+    {
+     "asin": "B00Q7OARO2",
+     "slug": "amazon-basics-microfiber-sheet-set",
+     "price": 15.2,
+     "rating": 4.5,
+     "ratings": 479318,
+     "bestseller": false
+    },
+    {
+     "asin": "B06WWRCZXX",
+     "slug": "cgk-unlimited-queen-size-4-piece",
+     "price": 24.99,
+     "rating": 4.5,
+     "ratings": 461594,
+     "bestseller": true
+    },
+    {
+     "asin": "B07YKLSMFM",
+     "slug": "down-alternative-comforter",
+     "price": 29.75,
+     "rating": 4.7,
+     "ratings": 77716,
+     "bestseller": false
+    },
+    {
+     "asin": "B00NLLUMOE",
+     "slug": "mellanni-iconic-4-piece-bed-sheet",
+     "price": 36.97,
+     "rating": 4.4,
+     "ratings": 380093,
+     "bestseller": true
+    },
+    {
+     "asin": "B07RY59C3W",
+     "slug": "lane-linen-queen-sheets-100-organic",
+     "price": 39.99,
+     "rating": 4.3,
+     "ratings": 34794,
+     "bestseller": true
+    },
+    {
+     "asin": "B0BZMYN1RB",
+     "slug": "shilucheng-cotton-sheet-set",
+     "price": 40.14,
+     "rating": 4.4,
+     "ratings": 5154,
+     "bestseller": false
+    },
+    {
+     "asin": "B084X6YHGR",
+     "slug": "percale-cotton-sheet-set",
+     "price": 59.99,
+     "rating": 4.3,
+     "ratings": 6532,
+     "bestseller": true
+    }
+   ],
+   "skipped_picks_reason": "1 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B084X6YHGR",
+     "slug": "percale-cotton-sheet-set",
+     "name": "California Design Den 100% Organic Cotton Percale Sheet Set (Queen)",
+     "price": 59.99,
+     "line": "Highest-end pick in this Top 10."
+    },
+    "bang": {
+     "asin": "B06WWRCZXX",
+     "slug": "cgk-unlimited-queen-size-4-piece",
+     "name": "CGK Unlimited Queen Size 4 Piece Sheet Set",
+     "price": 24.99,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 breathable & cooling sheets."
+    },
+    "value": {
+     "asin": "B0154ASID6",
+     "slug": "amazon-basics-lightweight-super-soft-breathable",
+     "name": "Amazon Basics Lightweight Super Soft Breathable",
+     "price": 14.68,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 14-Inch deep pockets."
+    }
+   }
+  },
+  "mattress-protectors": {
+   "site": "sleepworth",
+   "page": "mattress-protectors",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0C9MGYFHD",
+     "slug": "bedlore-waterproof-king-size-mattress-protector",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0DQKXZHPG",
+     "slug": "amazon-basics-waterproof-mattress-protector",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B00MRH9NCK",
+     "slug": "utopia-bedding-waterproof-twin-size-mattress",
+     "price": 12.99,
+     "rating": 4.5,
+     "ratings": 107159,
+     "bestseller": true
+    },
+    {
+     "asin": "B08BBZKSTS",
+     "slug": "springspirit-queen-size-mattress-protector-waterproof",
+     "price": 13.99,
+     "rating": 4.5,
+     "ratings": 18951,
+     "bestseller": true
+    },
+    {
+     "asin": "B0B5V7WBHM",
+     "slug": "utopia-bamboo-mattress-protector",
+     "price": 20.99,
+     "rating": 4.5,
+     "ratings": 107159,
+     "bestseller": false
+    },
+    {
+     "asin": "B0C1NNYJGB",
+     "slug": "bedlore-waterproof-mattress-protector",
+     "price": 25.49,
+     "rating": 4.6,
+     "ratings": 27263,
+     "bestseller": true
+    },
+    {
+     "asin": "B01JIV5YES",
+     "slug": "zippered-mattress-encasement",
+     "price": 27.99,
+     "rating": 4.6,
+     "ratings": 60709,
+     "bestseller": false
+    },
+    {
+     "asin": "B00MODW4AK",
+     "slug": "pillow-protector-pair",
+     "price": 37.97,
+     "rating": 4.6,
+     "ratings": 7275,
+     "bestseller": false
+    },
+    {
+     "asin": "B003PWNH4Q",
+     "slug": "saferest-mattress-protector",
+     "price": 39.99,
+     "rating": 4.6,
+     "ratings": 280564,
+     "bestseller": true
+    },
+    {
+     "asin": "B07H71SBC4",
+     "slug": "plushdeluxe-bamboo-waterproof-mattress-protector",
+     "price": 39.99,
+     "rating": 4.6,
+     "ratings": 43367,
+     "bestseller": true
+    }
+   ],
+   "skipped_picks_reason": "2 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B003PWNH4Q",
+     "slug": "saferest-mattress-protector",
+     "name": "SafeRest Waterproof Queen Size Mattress Protector",
+     "price": 39.99,
+     "line": "Highest-end pick in this Top 10 \u2014 keep your mattress dry."
+    },
+    "bang": {
+     "asin": "B0C1NNYJGB",
+     "slug": "bedlore-waterproof-mattress-protector",
+     "name": "BEDLORE Waterproof Mattress Protector",
+     "price": 25.49,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 queen size mattress pad noiseless."
+    },
+    "value": {
+     "asin": "B00MRH9NCK",
+     "slug": "utopia-bedding-waterproof-twin-size-mattress",
+     "name": "Utopia Bedding Waterproof Twin Size Mattress Protector fits Upto 15\" Deep",
+     "price": 12.99,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon."
+    }
+   }
+  },
+  "weighted-blankets": {
+   "site": "sleepworth",
+   "page": "weighted-blankets",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0CRB2Y4H5",
+     "slug": "weighted-blanket-20lb",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CR14YJ23",
+     "slug": "mr-sandman-cooling-weighted-blanket-for",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B0H6WK7HRT",
+     "slug": "an-cooling-weighted-blanket-for-adults",
+     "price": 24.29,
+     "rating": 4.6,
+     "ratings": 1052,
+     "bestseller": true
+    },
+    {
+     "asin": "B097DK6ZCR",
+     "slug": "l-agraty-weighted-blanket-for-adults",
+     "price": 26.98,
+     "rating": 4.5,
+     "ratings": 9562,
+     "bestseller": true
+    },
+    {
+     "asin": "B09MDFV73Q",
+     "slug": "topcee-weighted-blanket",
+     "price": 34.99,
+     "rating": 4.5,
+     "ratings": 9995,
+     "bestseller": true
+    },
+    {
+     "asin": "B073429DV2",
+     "slug": "ynm-weighted-blanket-15lb",
+     "price": 35.99,
+     "rating": 4.6,
+     "ratings": 23859,
+     "bestseller": false
+    },
+    {
+     "asin": "B092LZLLGF",
+     "slug": "yescool-weighted-blanket-for-adults-20lbs",
+     "price": 39.99,
+     "rating": 4.4,
+     "ratings": 11669,
+     "bestseller": true
+    },
+    {
+     "asin": "B08HLVH793",
+     "slug": "wemore-weighted-blanket-for-adult-15lbs",
+     "price": 49.99,
+     "rating": 4.7,
+     "ratings": 6363,
+     "bestseller": true
+    },
+    {
+     "asin": "B09S3GMXST",
+     "slug": "cooling-weighted-blanket",
+     "price": 89.9,
+     "rating": 4.5,
+     "ratings": 8501,
+     "bestseller": false
+    },
+    {
+     "asin": "B08CS22G7Z",
+     "slug": "gravity-weighted-blanket-15lb",
+     "price": 149.0,
+     "rating": 4.5,
+     "ratings": 231,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "2 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B08CS22G7Z",
+     "slug": "gravity-weighted-blanket-15lb",
+     "name": "Gravity Weighted Blanket (15 lb, 48\u00d772, Grey)",
+     "price": 149.0,
+     "line": "Highest-end pick in this Top 10 \u2014 48\" x 72\", - heavy comfort cotton blanket."
+    },
+    "bang": {
+     "asin": "B08HLVH793",
+     "slug": "wemore-weighted-blanket-for-adult-15lbs",
+     "name": "Wemore Weighted Blanket for Adult 15lbs Sherpa Fleece Queen",
+     "price": 49.99,
+     "line": "Mid-priced and an Amazon Best Seller."
+    },
+    "value": {
+     "asin": "B0H6WK7HRT",
+     "slug": "an-cooling-weighted-blanket-for-adults",
+     "name": "AN Cooling Weighted Blanket for Adults",
+     "price": 24.29,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 60\" x 80\" 15lbs queen."
+    }
+   }
+  },
+  "cooling-bedding": {
+   "site": "sleepworth",
+   "page": "cooling-bedding",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0D93V4GFX",
+     "slug": "cooling-comforter-insert",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CNQQX1V8",
+     "slug": "comfort-spaces-100-cotton-percale-sheets",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B07P5NBRL5",
+     "slug": "bedsure-queen-sheet-set-4-pieces",
+     "price": 16.99,
+     "rating": 4.6,
+     "ratings": 102930,
+     "bestseller": true
+    },
+    {
+     "asin": "B081DFRSCN",
+     "slug": "downcool-comforters-queen-size",
+     "price": 24.99,
+     "rating": 4.5,
+     "ratings": 19270,
+     "bestseller": true
+    },
+    {
+     "asin": "B08QTQ617T",
+     "slug": "hyleory-queen-comforter",
+     "price": 26.99,
+     "rating": 4.5,
+     "ratings": 25919,
+     "bestseller": true
+    },
+    {
+     "asin": "B07G81GQ3Q",
+     "slug": "cohome-all-season-queen-size-cooling",
+     "price": 30.92,
+     "rating": 4.6,
+     "ratings": 20224,
+     "bestseller": true
+    },
+    {
+     "asin": "B07D5DN269",
+     "slug": "cooling-mattress-pad",
+     "price": 39.99,
+     "rating": 4.3,
+     "ratings": 60532,
+     "bestseller": false
+    },
+    {
+     "asin": "B07YKCZHGK",
+     "slug": "cooling-bamboo-sheet-set",
+     "price": 54.99,
+     "rating": 4.4,
+     "ratings": 64978,
+     "bestseller": true
+    },
+    {
+     "asin": "B084R7MKLY",
+     "slug": "eucalyptus-lyocell-sheets",
+     "price": 79.99,
+     "rating": 4.3,
+     "ratings": 1008,
+     "bestseller": false
+    },
+    {
+     "asin": "B07DZTQ4JC",
+     "slug": "pure-bamboo-king-sheets",
+     "price": 109.99,
+     "rating": 4.5,
+     "ratings": 21831,
+     "bestseller": true
+    }
+   ],
+   "skipped_picks_reason": "2 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B07DZTQ4JC",
+     "slug": "pure-bamboo-king-sheets",
+     "name": "Pure Bamboo King Sheets",
+     "price": 109.99,
+     "line": "Highest-end pick in this Top 10 \u2014 luxuriously soft & cooling, double stitching."
+    },
+    "bang": {
+     "asin": "B07G81GQ3Q",
+     "slug": "cohome-all-season-queen-size-cooling",
+     "name": "COHOME All-Season Queen Size Cooling Comforter Duvet Insert",
+     "price": 30.92,
+     "line": "Mid-priced and an Amazon Best Seller."
+    },
+    "value": {
+     "asin": "B07P5NBRL5",
+     "slug": "bedsure-queen-sheet-set-4-pieces",
+     "name": "Bedsure Queen Sheet Set - 4 Pieces Soft",
+     "price": 16.99,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 cooling bed sheets."
+    }
+   }
+  },
+  "blackout-curtains-masks": {
+   "site": "sleepworth",
+   "page": "blackout-curtains-masks",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0CKC1DVNH",
+     "slug": "blackout-curtain-liner",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0F332CCLK",
+     "slug": "miulee-blackout-curtains-for-bedroom-2",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B09CZ68WV3",
+     "slug": "myhalos-sleep-mask-for-men-and",
+     "price": 9.99,
+     "rating": 4.6,
+     "ratings": 25656,
+     "bestseller": true
+    },
+    {
+     "asin": "B01CS31R94",
+     "slug": "nicetown-blackout-curtains",
+     "price": 10.78,
+     "rating": 4.6,
+     "ratings": 133657,
+     "bestseller": true
+    },
+    {
+     "asin": "B0881QG5WK",
+     "slug": "chrisdowa-blackout-curtains-for-bedroom-and",
+     "price": 11.99,
+     "rating": 4.6,
+     "ratings": 31618,
+     "bestseller": true
+    },
+    {
+     "asin": "B07L91H64N",
+     "slug": "alaska-bear-sleep-mask",
+     "price": 15.99,
+     "rating": 4.7,
+     "ratings": 3332,
+     "bestseller": false
+    },
+    {
+     "asin": "B09QSH4BJ2",
+     "slug": "mzoo-contoured-sleep-mask",
+     "price": 17.99,
+     "rating": 4.6,
+     "ratings": 101311,
+     "bestseller": false
+    },
+    {
+     "asin": "B08SBYPF14",
+     "slug": "miulee-100-blackout-linen-curtains-for",
+     "price": 25.95,
+     "rating": 4.6,
+     "ratings": 10312,
+     "bestseller": true
+    },
+    {
+     "asin": "B0BR3STN87",
+     "slug": "100-blackout-shield-linen-total-blackout",
+     "price": 32.97,
+     "rating": 4.5,
+     "ratings": 9021,
+     "bestseller": true
+    },
+    {
+     "asin": "B0C36K8SJJ",
+     "slug": "manta-sleep-mask",
+     "price": 85.0,
+     "rating": 4.1,
+     "ratings": 1771,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "2 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B0BR3STN87",
+     "slug": "100-blackout-shield-linen-total-blackout",
+     "name": "100% Blackout Shield Linen Total Blackout Curtains for Bedroom Living Room 84 Inch",
+     "price": 32.97,
+     "line": "Among the highest-end picks in this Top 10."
+    },
+    "bang": {
+     "asin": "B0881QG5WK",
+     "slug": "chrisdowa-blackout-curtains-for-bedroom-and",
+     "name": "ChrisDowa Blackout Curtains for Bedroom and Living Room 63",
+     "price": 11.99,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 set details."
+    },
+    "value": {
+     "asin": "B09CZ68WV3",
+     "slug": "myhalos-sleep-mask-for-men-and",
+     "name": "MyHalos Sleep Mask for Men and Women",
+     "price": 9.99,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 3D blackout eye masks for sleep."
+    }
+   }
+  },
+  "white-noise-sound-machines": {
+   "site": "sleepworth",
+   "page": "white-noise-sound-machines",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0DLLSCVZW",
+     "slug": "hatch-restore-3",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B0B7S213SX",
+     "slug": "babelio-pocket-mini-portable-white-noise",
+     "price": 15.99,
+     "rating": 4.4,
+     "ratings": 3714,
+     "bestseller": true
+    },
+    {
+     "asin": "B0B93SW5V9",
+     "slug": "brownnoise-brown-noise-sound-machine-with",
+     "price": 18.68,
+     "rating": 4.6,
+     "ratings": 12595,
+     "bestseller": true
+    },
+    {
+     "asin": "B07RWRJ4XW",
+     "slug": "magicteam-sound-white-noise-machine-with",
+     "price": 19.54,
+     "rating": 4.5,
+     "ratings": 69143,
+     "bestseller": true
+    },
+    {
+     "asin": "B0BBQX7P5J",
+     "slug": "dreamegg-portable-noise-machine-for-baby",
+     "price": 20.99,
+     "rating": 4.5,
+     "ratings": 10966,
+     "bestseller": true
+    },
+    {
+     "asin": "B00A2JBMRE",
+     "slug": "homedics-soundsleep-white-noise-sound-machine",
+     "price": 23.99,
+     "rating": 4.5,
+     "ratings": 58968,
+     "bestseller": true
+    },
+    {
+     "asin": "B099RSXLGH",
+     "slug": "momcozy-smart-baby-sound-machine-with",
+     "price": 39.97,
+     "rating": 4.4,
+     "ratings": 7738,
+     "bestseller": true
+    },
+    {
+     "asin": "B00HD0ELFK",
+     "slug": "yogasleep-dohm-classic",
+     "price": 49.99,
+     "rating": 4.6,
+     "ratings": 41062,
+     "bestseller": true
+    },
+    {
+     "asin": "B00MY8V86Q",
+     "slug": "lectrofan-classic",
+     "price": 54.95,
+     "rating": 4.6,
+     "ratings": 24915,
+     "bestseller": false
+    },
+    {
+     "asin": "B0HBPQ5TPC",
+     "slug": "soundcore-sleep-a20",
+     "price": 149.99,
+     "rating": 4.0,
+     "ratings": 1,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "1 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B00MY8V86Q",
+     "slug": "lectrofan-classic",
+     "name": "LectroFan Classic White Noise Machine",
+     "price": 54.95,
+     "line": "Among the highest-end picks in this Top 10."
+    },
+    "bang": {
+     "asin": "B00HD0ELFK",
+     "slug": "yogasleep-dohm-classic",
+     "name": "Yogasleep Dohm Classic",
+     "price": 49.99,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 soothing natural sounds from a real fan, sleep therapy for adults & baby."
+    },
+    "value": {
+     "asin": "B0B7S213SX",
+     "slug": "babelio-pocket-mini-portable-white-noise",
+     "name": "Babelio Pocket Mini Portable White Noise Machine for Travel",
+     "price": 15.99,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 15 sounds."
+    }
+   }
+  },
+  "bedtime-lighting": {
+   "site": "sleepworth",
+   "page": "bedtime-lighting",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0DLLSCVZW",
+     "slug": "hatch-restore-lighting",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0DGXD6WVW",
+     "slug": "odokee-sunrise-alarm-clock-white-noise",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0DSPVRXD2",
+     "slug": "wkzay-sunrise-alarm-clock-with-sound",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [
+    "no Best Seller in mid band"
+   ],
+   "prices": [
+    {
+     "asin": "B07Y1HVRSY",
+     "slug": "peakeep-night-light-digital-alarm-clock",
+     "price": 13.98,
+     "rating": 4.4,
+     "ratings": 25645,
+     "bestseller": true
+    },
+    {
+     "asin": "B0H4TQXH83",
+     "slug": "red-night-light-sleep",
+     "price": 25.99,
+     "rating": 4.7,
+     "ratings": 25,
+     "bestseller": false
+    },
+    {
+     "asin": "B0HDTGK91F",
+     "slug": "vicsoon-sunrise-alarm-clock-with-wake",
+     "price": 36.99,
+     "rating": 4.2,
+     "ratings": 5,
+     "bestseller": false
+    },
+    {
+     "asin": "B0BZW7WY5M",
+     "slug": "reacher-wood-grain-sunrise-alarm-clock",
+     "price": 37.99,
+     "rating": 4.4,
+     "ratings": 3677,
+     "bestseller": false
+    },
+    {
+     "asin": "B08L3DFP84",
+     "slug": "dimmable-bedside-lamp",
+     "price": 39.99,
+     "rating": 4.6,
+     "ratings": 5564,
+     "bestseller": false
+    },
+    {
+     "asin": "B081CHLF46",
+     "slug": "jall-full-screen-wake-up-light",
+     "price": 39.99,
+     "rating": 4.3,
+     "ratings": 28235,
+     "bestseller": false
+    },
+    {
+     "asin": "B0093162RM",
+     "slug": "philips-smartsleep-hf3520",
+     "price": 106.99,
+     "rating": 4.3,
+     "ratings": 14793,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "3 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B0093162RM",
+     "slug": "philips-smartsleep-hf3520",
+     "name": "Philips SmartSleep Wake-Up Light HF3520",
+     "price": 106.99,
+     "line": "Highest-end pick in this Top 10 \u2014 colored sunrise and sunset simulation, 5 natural sounds."
+    },
+    "bang": {
+     "asin": "B08L3DFP84",
+     "slug": "dimmable-bedside-lamp",
+     "name": "Lakumu Touch-Control Dimmable Bedside Lamp",
+     "price": 39.99,
+     "line": "Mid-priced and well rated on Amazon \u2014 3 way dimmable nightstand lamp."
+    },
+    "value": {
+     "asin": "B07Y1HVRSY",
+     "slug": "peakeep-night-light-digital-alarm-clock",
+     "name": "Peakeep Night Light Digital Alarm Clock Battery Operated Indoor",
+     "price": 13.98,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon."
+    }
+   }
+  },
+  "sleep-air-humidity": {
+   "site": "sleepworth",
+   "page": "sleep-air-humidity",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0DYPHTYMJ",
+     "slug": "frida-3-in-1-cool-mist",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0DY4S3HP2",
+     "slug": "voopnu-air-purifiers-for-home",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CCY6VG8Z",
+     "slug": "dreo-4l-humidifiers-for-bedroom",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0DJG1731C",
+     "slug": "winix-5510-air-purifier-new-generation",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B0C2C9NHZW",
+     "slug": "levoit-top-fill-humidifiers-for-bedroom",
+     "price": 29.78,
+     "rating": 4.4,
+     "ratings": 63836,
+     "bestseller": true
+    },
+    {
+     "asin": "B0FXGK76DF",
+     "slug": "dreo-3l-humidifiers-for-bedroom",
+     "price": 29.9,
+     "rating": 4.5,
+     "ratings": 5328,
+     "bestseller": true
+    },
+    {
+     "asin": "B07VVK39F7",
+     "slug": "bedroom-air-purifier-quiet",
+     "price": 80.99,
+     "rating": 4.7,
+     "ratings": 108930,
+     "bestseller": true
+    },
+    {
+     "asin": "B07GRGW3SY",
+     "slug": "honeywell-hul570w-humidifier",
+     "price": 97.79,
+     "rating": 4.1,
+     "ratings": 1740,
+     "bestseller": false
+    },
+    {
+     "asin": "B095KGXPW5",
+     "slug": "levoit-lv600s-humidifier",
+     "price": 109.0,
+     "rating": 4.3,
+     "ratings": 6804,
+     "bestseller": true
+    },
+    {
+     "asin": "B01728NLRG",
+     "slug": "coway-air-purifier-for-home-up",
+     "price": 154.99,
+     "rating": 4.6,
+     "ratings": 29168,
+     "bestseller": true
+    }
+   ],
+   "skipped_picks_reason": "4 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B01728NLRG",
+     "slug": "coway-air-purifier-for-home-up",
+     "name": "COWAY Air Purifier for Home Up to 1,748ft\u00b2",
+     "price": 154.99,
+     "line": "Highest-end pick in this Top 10 \u2014 HEPA filter for smoke, pet dander."
+    },
+    "bang": {
+     "asin": "B07VVK39F7",
+     "slug": "bedroom-air-purifier-quiet",
+     "name": "LEVOIT Core 300-P Air Purifier",
+     "price": 80.99,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 why choose aham verifide air purifiers."
+    },
+    "value": {
+     "asin": "B0C2C9NHZW",
+     "slug": "levoit-top-fill-humidifiers-for-bedroom",
+     "name": "Levoit Top Fill Humidifiers for Bedroom",
+     "price": 29.78,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 2.5L tank for large room."
+    }
+   }
+  },
+  "sleep-masks": {
+   "site": "sleepworth",
+   "page": "sleep-masks",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0D3V61JC8",
+     "slug": "loop-quiet",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0DJNSZ8VW",
+     "slug": "fygrip-3d-eye-mask-sleep-mask",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CN1CLQVJ",
+     "slug": "moeaseii-sleep-mask-total-blackout-3d",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CSNBB2RG",
+     "slug": "facemoon-3d-blackout-weighted-sleep-mask",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B08817H6HS",
+     "slug": "beevines-100-mulberry-silk-sleep-mask",
+     "price": 8.99,
+     "rating": 4.6,
+     "ratings": 33803,
+     "bestseller": true
+    },
+    {
+     "asin": "B0FSQVBQDC",
+     "slug": "vynix-sleep-mask-for-men-women",
+     "price": 9.99,
+     "rating": 4.6,
+     "ratings": 2191,
+     "bestseller": true
+    },
+    {
+     "asin": "B07YSNNFY3",
+     "slug": "lky-digital-sleep-mask-for-side",
+     "price": 9.99,
+     "rating": 4.5,
+     "ratings": 71604,
+     "bestseller": true
+    },
+    {
+     "asin": "B09H7FZ5JM",
+     "slug": "litbear-sleep-mask-for-side-sleeper",
+     "price": 15.99,
+     "rating": 4.7,
+     "ratings": 17198,
+     "bestseller": true
+    },
+    {
+     "asin": "B07KC5DWCC",
+     "slug": "mzoo-luxury-sleep-mask-for-women",
+     "price": 17.99,
+     "rating": 4.6,
+     "ratings": 101311,
+     "bestseller": true
+    },
+    {
+     "asin": "B01E7YKAL8",
+     "slug": "nodpod-patented-gentle-pressure-sleep-mask",
+     "price": 38.0,
+     "rating": 4.4,
+     "ratings": 8778,
+     "bestseller": true
+    }
+   ],
+   "skipped_picks_reason": "4 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B01E7YKAL8",
+     "slug": "nodpod-patented-gentle-pressure-sleep-mask",
+     "name": "nodpod Patented Gentle Pressure Sleep Mask",
+     "price": 38.0,
+     "line": "Highest-end pick in this Top 10 \u2014 weighted eye mask."
+    },
+    "bang": {
+     "asin": "B09H7FZ5JM",
+     "slug": "litbear-sleep-mask-for-side-sleeper",
+     "name": "LitBear Sleep Mask for Side Sleeper Women Men",
+     "price": 15.99,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 eye mask for sleeping."
+    },
+    "value": {
+     "asin": "B08817H6HS",
+     "slug": "beevines-100-mulberry-silk-sleep-mask",
+     "name": "BeeVines 100% Mulberry Silk Sleep Mask",
+     "price": 8.99,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 light blocking eye masks, 2 packs."
+    }
+   }
+  },
+  "earplugs": {
+   "site": "sleepworth",
+   "page": "earplugs",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0D3V61JC8",
+     "slug": "loop-quiet-earplugs",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0DJR3GFCP",
+     "slug": "loop-switch-2-adjustable-ear-plugs",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0D3V5QN4P",
+     "slug": "loop-engage-2-ear-plugs",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CHJ79LSQ",
+     "slug": "justrvn-ear-plugs-for-sleeping",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B001FPCUHA",
+     "slug": "flents-protechs-quiet-time-foam-ear",
+     "price": 3.57,
+     "rating": 4.4,
+     "ratings": 21101,
+     "bestseller": true
+    },
+    {
+     "asin": "B0051U7W32",
+     "slug": "macks",
+     "price": 9.89,
+     "rating": 4.5,
+     "ratings": 51715,
+     "bestseller": true
+    },
+    {
+     "asin": "B09SL7FNRF",
+     "slug": "lysian-soft-foam-ear-plugs-for",
+     "price": 9.99,
+     "rating": 4.3,
+     "ratings": 22158,
+     "bestseller": true
+    },
+    {
+     "asin": "B0HJ2GPGHK",
+     "slug": "clxynd-ear-plugs-for-sleeping-noise",
+     "price": 9.99,
+     "rating": 4.4,
+     "ratings": 26,
+     "bestseller": true
+    },
+    {
+     "asin": "B07DNFD3HM",
+     "slug": "peace-quiet-pq-wax-ear-plugs",
+     "price": 11.99,
+     "rating": 4.3,
+     "ratings": 8614,
+     "bestseller": true
+    },
+    {
+     "asin": "B07G1MWHNR",
+     "slug": "mack-s-pillow-soft-silicone-earplugs",
+     "price": 12.99,
+     "rating": 4.6,
+     "ratings": 6986,
+     "bestseller": true
+    }
+   ],
+   "skipped_picks_reason": "4 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B07G1MWHNR",
+     "slug": "mack-s-pillow-soft-silicone-earplugs",
+     "name": "Mack's Pillow Soft Silicone Earplugs",
+     "price": 12.99,
+     "line": "Highest-end pick in this Top 10 \u2014 12 pair, the original moldable silicone putty ear plugs for sleeping."
+    },
+    "bang": {
+     "asin": "B09SL7FNRF",
+     "slug": "lysian-soft-foam-ear-plugs-for",
+     "name": "LYSIAN Soft Foam Ear Plugs for Sleeping",
+     "price": 9.99,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 60 pairs, 38dB SNR."
+    },
+    "value": {
+     "asin": "B001FPCUHA",
+     "slug": "flents-protechs-quiet-time-foam-ear",
+     "name": "Flents Protechs Quiet Time Foam Ear Plugs",
+     "price": 3.57,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 NRR 33, 10 pair."
+    }
+   }
+  }
+ }
+}
