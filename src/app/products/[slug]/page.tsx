@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { AffiliateNote } from "@/components/AffiliateNote";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -192,7 +191,6 @@ export default async function ProductPage({ params }: Props) {
             {product.name}
           </h1>
           <p className="mt-1 text-sm text-slate-500">{product.brand}</p>
-          <AffiliateNote className="mt-2" />
           <p className="mt-4 text-lg text-slate-600">{product.tagline}</p>
           <AffiliateButton
             className="mt-6"

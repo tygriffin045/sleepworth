@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { AffiliateNote } from "@/components/AffiliateNote";
 import Link from "next/link";
 import { categories } from "@/data/categories";
 import { getFeaturedProducts } from "@/data/products";
@@ -93,7 +92,6 @@ export default function HomePage() {
               Browse all products
             </Link>
           </div>
-          <AffiliateNote className="mt-4" />
         </div>
       </section>
 

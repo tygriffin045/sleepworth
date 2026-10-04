@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { AffiliateNote } from "@/components/AffiliateNote";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getGuide, guides } from "@/data/guides";
@@ -123,7 +122,6 @@ export default async function GuidePage({ params }: Props) {
           {guide.title}
         </h1>
         <p className="mt-4 text-lg text-slate-600">{guide.description}</p>
-        <AffiliateNote />
         {guide.verdict && (
           <p className="mt-6 rounded-2xl border-l-4 border-indigo-600 bg-white p-5 leading-relaxed text-slate-700 shadow-sm">
             <span className="font-semibold text-slate-900">Short answer: </span>

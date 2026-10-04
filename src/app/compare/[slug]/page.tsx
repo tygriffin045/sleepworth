@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { AffiliateNote } from "@/components/AffiliateNote";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { compares, getCompare } from "@/data/compares";
@@ -112,7 +111,6 @@ export default async function ComparePage({ params }: Props) {
             Best for… hubs
           </Link>
         </div>
-        <AffiliateNote />
       </header>
 
       <div id="table" className="overflow-x-auto rounded-2xl border border-slate-200 bg-white">

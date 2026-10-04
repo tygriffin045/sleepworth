@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { AffiliateNote } from "@/components/AffiliateNote";
 import Link from "next/link";
 import { products } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
@@ -52,7 +51,6 @@ export default function ProductsPage() {
           {products.length} editorial picks — each with a use-case label, honest
           cons, and a direct Amazon link. No invented scores.
         </p>
-        <AffiliateNote />
         <div className="mt-4 flex flex-wrap gap-3">
           <Link
             href="/best"

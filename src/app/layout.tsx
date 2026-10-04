@@ -4,6 +4,7 @@ import { Source_Sans_3, Source_Serif_4 } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { AffiliateNote } from "@/components/AffiliateNote";
 import "./globals.css";
 
 const sans = Source_Sans_3({
@@ -61,6 +62,7 @@ export default function RootLayout({
       >
         <Header />
         <main className="mx-auto min-h-[70vh] max-w-6xl px-4 py-10 sm:px-6">
+          <AffiliateNote className="mb-4 mt-0" />
           {children}
         </main>
         <Footer />

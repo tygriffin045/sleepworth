@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { AffiliateNote } from "@/components/AffiliateNote";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { categories, getCategory } from "@/data/categories";
@@ -101,7 +100,6 @@ export default async function CategoryPage({ params }: Props) {
             Compare tables
           </Link>
         </div>
-        <AffiliateNote />
       </div>
       <BadgePicks category={slug} />
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
