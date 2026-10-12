@@ -45,37 +45,37 @@ export const categories: Category[] = [
   },
   {
     slug: "blackout-curtains-masks",
-    name: "Blackout Curtains / Sleep Masks",
-    shortLabel: "Darkness",
+    name: "Blackout Curtains & Liners",
+    shortLabel: "Blackout",
     description:
-      "True darkness is underrated. Curtains handle the room; masks handle travel and stubborn light leaks. Contoured cups beat flat masks for side sleepers who hate eyelid pressure. “Blackout” on a label is rarely 100% without overlapping panels.",
+      "True darkness is underrated. Blackout curtains and liners handle the room; for masks, see our Sleep Masks category. “Blackout” on a label is rarely 100% without overlapping panels and wide-enough rods.",
   },
   {
     slug: "white-noise-sound-machines",
     name: "White Noise / Sound Machines",
     shortLabel: "Sound",
     description:
-      "Fan-based classics for natural non-looping hush, digital generators when you need precise volume or tinnitus masking, and sleep earbuds when a partner’s snore is the problem — not the hallway.",
+      "Fan-based classics for natural non-looping hush, digital generators when you need precise volume or more sound choices, and sleep earbuds when a partner’s snore is the problem — not the hallway.",
   },
   {
     slug: "bedtime-lighting",
     name: "Bedtime Lighting / Sunrise Alarms",
     shortLabel: "Lighting",
     description:
-      "Wind-down light and sunrise alarms that replace phone screens. Hatch-style routine devices, dedicated wake-up lights, and dim bedside lamps — framed for circadian cues, not desk task lighting.",
+      "Wind-down light and sunrise alarms that replace phone screens. Hatch-style routine devices, dedicated wake-up lights, and dim bedside lamps — for gentler wake-ups and wind-down, not desk task lighting.",
   },
   {
     slug: "sleep-air-humidity",
     name: "Sleep Air & Humidity",
     shortLabel: "Air",
     description:
-      "Bedroom humidity and quiet mist when dry air wrecks your throat at 3 a.m. We stick to sleep-framed humidifiers with real sleep modes — not whole-house HVAC projects.",
+      "Bedroom humidifiers and air purifiers for when dry or stuffy air bothers you at night. We stick to quiet, bedroom-sized units with sleep modes, not whole-house HVAC projects.",
   },
   {
     slug: "sleep-masks",
     name: "Sleep Masks",
     shortLabel: "Masks",
-    description: "Masks and plugs for light and noise the room will not give up.",
+    description: "Contoured, silk, and weighted eye masks for light the room will not give up, at home or while traveling.",
   },
   {
     slug: "earplugs",

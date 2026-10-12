@@ -9,6 +9,7 @@ import {
 } from "@/data/products";
 import { getCategory } from "@/data/categories";
 import { AffiliateButton } from "@/components/AffiliateButton";
+import { TierBadge } from "@/components/TierBadge";
 import { StickyAffiliateBar } from "@/components/StickyAffiliateBar";
 import { ProductCard } from "@/components/ProductCard";
 import { RelatedNav } from "@/components/RelatedNav";
@@ -67,24 +68,6 @@ export default async function ProductPage({ params }: Props) {
     amazonAsin: product.amazonAsin,
     amazonQuery: product.amazonQuery,
   });
-  const imageAbs = product.imageUrl
-    ? product.imageUrl.startsWith("http")
-      ? product.imageUrl
-      : `${SITE_URL}${product.imageUrl}`
-    : undefined;
-
-  // Product JSON-LD: real brand/name/image; AggregateOffer uses our editorial
-  // price band only — no fake ratings or invented InStock claims.
-  const productLd: Record<string, unknown> = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: product.name,
-    description: product.summary,
-    brand: { "@type": "Brand", name: product.brand },
-    ...(imageAbs ? { image: [imageAbs] } : {}),
-    ...(product.amazonAsin ? { sku: product.amazonAsin } : {}),
-  };
-
   const breadcrumbLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -123,13 +106,12 @@ export default async function ProductPage({ params }: Props) {
 
   return (
     <div className="space-y-12 pb-28">
-      <JsonLd data={[productLd, breadcrumbLd]} />
+      <JsonLd data={[breadcrumbLd]} />
       <StickyAffiliateBar
         productSlug={product.slug}
         productName={product.name}
         amazonAsin={product.amazonAsin}
         amazonQuery={product.amazonQuery}
-        priceBand={product.priceBand}
       />
       <nav className="text-sm text-slate-500">
         <Link href="/products" className="hover:text-slate-800">
@@ -190,7 +172,7 @@ export default async function ProductPage({ params }: Props) {
           <h1 className="mt-3 font-serif text-3xl text-slate-900 sm:text-4xl">
             {product.name}
           </h1>
-          <p className="mt-1 text-sm text-slate-500">{product.brand}</p>
+          <p className="mt-1 flex items-center gap-2 text-sm text-slate-500">{product.brand} <TierBadge tier={product.tier} /></p>
           <p className="mt-4 text-lg text-slate-600">{product.tagline}</p>
           <AffiliateButton
             className="mt-6"

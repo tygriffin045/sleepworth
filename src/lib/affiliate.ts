@@ -28,7 +28,7 @@ export function getAffiliateUrl(target: string | AffiliateTarget): string {
 }
 
 export const AFFILIATE_DISCLOSURE_SHORT =
-  "We may earn a commission from qualifying purchases.";
+  "We research products from Amazon listing details, specs, and ratings; we have not tested them hands-on. We may earn a commission from qualifying purchases.";
 
 export const AMAZON_ASSOCIATE_STATEMENT =
   "As an Amazon Associate I earn from qualifying purchases.";

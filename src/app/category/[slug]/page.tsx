@@ -3,12 +3,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { categories, getCategory } from "@/data/categories";
 import { getTopPicks } from "@/data/top10";
-import { ProductCard } from "@/components/ProductCard";
 import { RelatedNav } from "@/components/RelatedNav";
 import { JsonLd } from "@/components/JsonLd";
 import { getRelatedForCategory } from "@/lib/related-content";
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGES, DEFAULT_TWITTER_IMAGES } from "@/lib/site";
 import { BadgePicks } from "@/components/BadgePicks";
+import { Top10List } from "@/components/Top10List";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -80,8 +80,7 @@ export default async function CategoryPage({ params }: Props) {
           {category.description}
         </p>
         <p className="mt-2 text-sm text-slate-500">
-          Top {items.length} picks · each card
-          carries a &quot;best for&quot; label ·{" "}
+          Top {items.length} picks, ranked · budget tiers $ / $$ / $$$ ·{" "}
           <Link href="/products" className="underline underline-offset-2">
             View all
           </Link>
@@ -102,11 +101,7 @@ export default async function CategoryPage({ params }: Props) {
         </div>
       </div>
       <BadgePicks category={slug} />
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {items.map((p, i) => (
-          <ProductCard key={p.slug} product={p} priority={i < 3} />
-        ))}
-      </div>
+      <Top10List items={items} heading={`Top ${items.length} ${category.name}`} />
       <RelatedNav title="Related hubs, compares & guides" links={related} />
     </div>
   );

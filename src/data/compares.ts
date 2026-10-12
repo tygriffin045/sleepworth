@@ -3,7 +3,6 @@ export type CompareRow = {
   bestFor: string;
   loftOrFeel: string;
   cooling: string;
-  priceBand: string;
   skipIf: string;
 };
 
@@ -30,7 +29,6 @@ export const compares: CompareTable[] = [
       { key: "bestFor", label: "Best for" },
       { key: "loftOrFeel", label: "Loft / feel" },
       { key: "cooling", label: "Cooling" },
-      { key: "priceBand", label: "Price band" },
       { key: "skipIf", label: "Skip if" },
     ],
     rows: [
@@ -39,7 +37,6 @@ export const compares: CompareTable[] = [
         bestFor: "Combo sleepers",
         loftOrFeel: "User-tuned shredded foam",
         cooling: "Average",
-        priceBand: "About $70–$90",
         skipIf: "You refuse any setup time",
       },
       {
@@ -47,7 +44,6 @@ export const compares: CompareTable[] = [
         bestFor: "Warm Coop fans",
         loftOrFeel: "Softer adjustable",
         cooling: "Better than Original",
-        priceBand: "About $80–$100",
         skipIf: "You sleep cold on Original",
       },
       {
@@ -55,7 +51,6 @@ export const compares: CompareTable[] = [
         bestFor: "Guest rooms / budget pair",
         loftOrFeel: "Plush down-alt loft",
         cooling: "Average",
-        priceBand: "About $40–$60",
         skipIf: "You need precise neck loft",
       },
       {
@@ -63,7 +58,6 @@ export const compares: CompareTable[] = [
         bestFor: "Hot + bounce seekers",
         loftOrFeel: "Latex + GelFlex grid",
         cooling: "Strong",
-        priceBand: "About $150–$200",
         skipIf: "Budget is mid-range",
       },
       {
@@ -71,7 +65,6 @@ export const compares: CompareTable[] = [
         bestFor: "TEMPUR mattress owners",
         loftOrFeel: "Slow-response hug",
         cooling: "Can sleep warm",
-        priceBand: "About $100–$160",
         skipIf: "You hate sink-in foam",
       },
     ],
@@ -90,7 +83,6 @@ export const compares: CompareTable[] = [
       { key: "bestFor", label: "Best for" },
       { key: "loftOrFeel", label: "Sound type" },
       { key: "cooling", label: "Extras" },
-      { key: "priceBand", label: "Price band" },
       { key: "skipIf", label: "Skip if" },
     ],
     rows: [
@@ -99,15 +91,13 @@ export const compares: CompareTable[] = [
         bestFor: "Natural fan hush",
         loftOrFeel: "Real fan, no loops",
         cooling: "Tone via cap/collar",
-        priceBand: "About $45–$55",
         skipIf: "You need rain/ocean libraries",
       },
       {
         productSlug: "lectrofan-classic",
-        bestFor: "Tinnitus / precise volume",
+        bestFor: "Precise volume",
         loftOrFeel: "Non-looping digital",
         cooling: "~20 variants, travel size",
-        priceBand: "About $40–$55",
         skipIf: "You only want mechanical fan",
       },
       {
@@ -115,7 +105,6 @@ export const compares: CompareTable[] = [
         bestFor: "Routines + sunrise",
         loftOrFeel: "App soundscapes",
         cooling: "Light + wind-down",
-        priceBand: "About $170",
         skipIf: "You only need noise",
       },
       {
@@ -123,7 +112,6 @@ export const compares: CompareTable[] = [
         bestFor: "Sunrise without Hatch",
         loftOrFeel: "Light-first + sounds/FM",
         cooling: "Dedicated wake-up light",
-        priceBand: "About $80–$120",
         skipIf: "You already own Hatch",
       },
     ],
@@ -142,7 +130,6 @@ export const compares: CompareTable[] = [
       { key: "bestFor", label: "Best for" },
       { key: "loftOrFeel", label: "Thickness / feel" },
       { key: "cooling", label: "Heat feel" },
-      { key: "priceBand", label: "Price band" },
       { key: "skipIf", label: "Skip if" },
     ],
     rows: [
@@ -151,7 +138,6 @@ export const compares: CompareTable[] = [
         bestFor: "First softens",
         loftOrFeel: "2\" gel memory foam",
         cooling: "Moderate",
-        priceBand: "About $45–$90",
         skipIf: "Mattress is sagging",
       },
       {
@@ -159,7 +145,6 @@ export const compares: CompareTable[] = [
         bestFor: "Side-sleeper pressure",
         loftOrFeel: "3\" deeper plush",
         cooling: "Warmer than latex",
-        priceBand: "About $60–$120",
         skipIf: "You need firm support",
       },
       {
@@ -167,7 +152,6 @@ export const compares: CompareTable[] = [
         bestFor: "Hot foam-haters",
         loftOrFeel: "2\" soft natural Dunlop latex bounce (no cover)",
         cooling: "Usually cooler",
-        priceBand: "About $170–$200",
         skipIf: "You want maximum hug",
       },
       {
@@ -175,7 +159,6 @@ export const compares: CompareTable[] = [
         bestFor: "Premium TEMPUR feel",
         loftOrFeel: "~3\" conforming",
         cooling: "Cover helps; foam still hugs",
-        priceBand: "About $200–$450+",
         skipIf: "On a tighter budget",
       },
     ],
@@ -188,13 +171,12 @@ export const compares: CompareTable[] = [
     description:
       "Curtains vs liners vs contoured masks vs silk flats — room fixes vs personal fixes.",
     intro:
-      "Curtains fix the room; masks fix travel and leftover leaks. Contoured cups protect eyelashes; silk flats win on soft price. Liners keep decorative drapes.",
+      "Curtains fix the room; masks fix travel and leftover leaks. Contoured cups protect eyelashes; silk flats are the softer, simpler option. Liners keep decorative drapes.",
     columns: [
       { key: "name", label: "Tool" },
       { key: "bestFor", label: "Best for" },
       { key: "loftOrFeel", label: "Coverage" },
       { key: "cooling", label: "Notes" },
-      { key: "priceBand", label: "Price band" },
       { key: "skipIf", label: "Skip if" },
     ],
     rows: [
@@ -203,7 +185,6 @@ export const compares: CompareTable[] = [
         bestFor: "Apartment streetlights",
         loftOrFeel: "Full window (if overlapped)",
         cooling: "Thermal layers help",
-        priceBand: "About $25–$50",
         skipIf: "Panels too narrow for window",
       },
       {
@@ -211,7 +192,6 @@ export const compares: CompareTable[] = [
         bestFor: "Keep existing drapes",
         loftOrFeel: "Behind decorative panels",
         cooling: "Adds density",
-        priceBand: "About $20–$40",
         skipIf: "Curtains are already cheap junk",
       },
       {
@@ -219,7 +199,6 @@ export const compares: CompareTable[] = [
         bestFor: "Budget contoured",
         loftOrFeel: "Eyes only",
         cooling: "No eyelid press",
-        priceBand: "About $12–$25",
         skipIf: "You want Manta adjustability",
       },
       {
@@ -227,7 +206,6 @@ export const compares: CompareTable[] = [
         bestFor: "Soft nightly mask",
         loftOrFeel: "Eyes only",
         cooling: "Silk hand-feel",
-        priceBand: "About $10–$20",
         skipIf: "Flat masks always fail you",
       },
     ],

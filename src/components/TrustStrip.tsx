@@ -17,7 +17,7 @@ export function TrustStrip() {
             Specific use cases
           </p>
           <p className="mt-1 text-sm text-slate-600">
-            Every pick says who it is for — side sleeper loft, tinnitus volume
+            Every pick says who it is for — side sleeper loft, volume
             steps, hot-sleeper fibers — not a vague “best overall.”
           </p>
         </div>

@@ -23,7 +23,7 @@ export const hubs: Hub[] = [
       "coop-original-adjustable-pillow",
       "coop-eden-pillow",
       "purple-harmony-pillow",
-      "eli-elm-contoured-pillow",
+      "sidney-sleep-curved-pillow",
       "linenspa-3-inch-gel-memory-foam-topper",
       "manta-sleep-mask",
       "mzoo-contoured-sleep-mask",
@@ -63,7 +63,7 @@ export const hubs: Hub[] = [
       "Streetlight and early-sun fixes for renters: curtains that actually overlap, liners behind decorative panels, and masks for stubborn leaks.",
     intro: [
       "“Blackout” on a label is not 100% if panels do not overlap or light leaks at the edges. Measure width generously; wraparound rods help. Liners keep decorative curtains you already like.",
-      "Masks handle travel and the last light cracks. Contoured cups (Manta / MZOO) beat flat silk for side sleepers who hate eyelid pressure; Alaska Bear wins on soft nightly price.",
+      "Masks handle travel and the last light cracks. Contoured cups (Manta / MZOO) beat flat silk for side sleepers who hate eyelid pressure; Alaska Bear is the soft, low-cost nightly option.",
     ],
     productSlugs: [
       "nicetown-blackout-curtains",
@@ -91,13 +91,13 @@ export const hubs: Hub[] = [
       "beckham-hotel-collection-pillows",
       "amazon-basics-microfiber-sheet-set",
       "saferest-mattress-protector",
-      "utopia-bamboo-mattress-protector",
+      "utopia-waterproof-mattress-protector",
       "nicetown-blackout-curtains",
       "alaska-bear-sleep-mask",
       "yogasleep-dohm-classic",
       "lectrofan-classic",
       "ynm-weighted-blanket-15lb",
-      "honeywell-hul570w-humidifier",
+      "honeywell-hul430-humidifier",
     ],
     skipAdvice:
       "Skip TEMPUR toppers and Hatch Restore until the basics are covered. Premium only pays off after darkness, noise, and a usable pillow are solved.",

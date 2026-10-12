@@ -12,7 +12,7 @@ export type CategorySlug =
   | "sleep-air-humidity"
   | "earplugs";
 
-export type BudgetBand = "budget" | "mid" | "premium";
+export type BudgetTier = "$" | "$$" | "$$$";
 
 export interface ProductSpec {
   label: string;
@@ -28,10 +28,8 @@ export interface Product {
   bestFor: string;
   tagline: string;
   summary: string;
-  priceBand: string;
-  budget: BudgetBand;
-  priceMin: number;
-  priceMax: number;
+  /** $ / $$ / $$$ budget tier. Never a price. */
+  tier: BudgetTier;
   imageGradient: string;
   imageAlt: string;
   imageUrl?: string;
