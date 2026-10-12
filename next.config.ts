@@ -28,6 +28,7 @@ const nextConfig: NextConfig = {
       { source: "/products/utopia-bamboo-mattress-protector", destination: "/products/utopia-waterproof-mattress-protector", permanent: true },
       { source: "/products/red-night-light-sleep", destination: "/products/auvon-motion-night-light", permanent: true },
       { source: "/products/macks", destination: "/products/macks-ultra-soft-foam-earplugs", permanent: true },
+      { source: "/products/loop-engage-2-ear-plugs", destination: "/category/earplugs", permanent: true },
       { source: "/products/loop-quiet", destination: "/products/loop-quiet-earplugs", permanent: true },
       { source: "/products/loop-mask", destination: "/products/loop-quiet-earplugs", permanent: true },
       { source: "/products/hatch-restore-lighting", destination: "/products/hatch-restore-3", permanent: true },

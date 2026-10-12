@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Product } from "@/data/types";
 import { AffiliateButton } from "@/components/AffiliateButton";
 import { TierBadge } from "@/components/TierBadge";
-import { getThreePicks } from "@/data/top10";
+import { getThreePicks, getTopPicks } from "@/data/top10";
 
 const BADGE = {
   best: { label: "Best Overall", cls: "bg-indigo-800 text-white" },
@@ -30,7 +30,7 @@ export function BadgePicks({ category }: { category: string }) {
         Our three picks
       </h2>
       <p className="mt-1 text-sm text-slate-600">
-        Chosen from the Top 10 below. Budget tiers: $ budget · $$ mid-range · $$$ premium.
+        Chosen from the Top {getTopPicks(category).length} below. Budget tiers: $ budget · $$ mid-range · $$$ premium.
       </p>
       <div className="mt-5 grid gap-5 sm:grid-cols-3">
         {rows.map(({ kind, p }) => (

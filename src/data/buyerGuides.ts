@@ -544,17 +544,17 @@ export const buyerGuides: Guide[] = [
     readingTime: "7 min read",
     publishedAt: "2026-10-12",
     verdict:
-      "Buy the Loop Quiet 2 if you want reusable silicone tips that many side sleepers find more comfortable than foam. Buy Mack's Ultra Soft (50 pair) if maximum noise blocking for the money is the goal and you don't mind rolling foam every night. Flents Quiet Time is the low-cost foam alternative when you just need a few pairs for travel.",
+      "For most sleepers, start with Mack's Ultra Soft (50 pair): NRR 33 dB foam that blocks the most noise for the money if you don't mind rolling a fresh pair each night. Side sleepers who find foam presses against the pillow should look at the Loop Quiet 2, reusable silicone with four tip sizes. Flents Quiet Time is the low-cost foam option when you just need a few pairs for travel.",
     quickPicks: [
       {
-        label: "Best reusable for most sleepers",
-        productSlug: "loop-quiet-earplugs",
-        why: "Silicone with four tip sizes (XS–L), 24 dB SNR, washable, and sized for side sleeping.",
-      },
-      {
-        label: "Best foam for maximum blocking",
+        label: "Best overall",
         productSlug: "macks-ultra-soft-foam-earplugs",
         why: "NRR 33 dB, 50 pairs, slow-recovery foam made in the USA.",
+      },
+      {
+        label: "Best for side sleepers",
+        productSlug: "loop-quiet-earplugs",
+        why: "Silicone with four tip sizes (XS–L), 24 dB SNR, washable, and sized for side sleeping.",
       },
       {
         label: "Best budget foam pack",
@@ -583,29 +583,10 @@ export const buyerGuides: Guide[] = [
     ],
     picks: [
       {
-        productSlug: "loop-quiet-earplugs",
-        label: "Best reusable for most sleepers",
-        verdict:
-          "The Loop Quiet 2 is the reusable option we suggest for most people. Flexible silicone, four tip sizes, and a carry case. Its rating is lower than the best foam, but many side sleepers say in reviews that it stays comfortable longer.",
-        pros: [
-          "24 dB SNR noise reduction per the listing",
-          "Four tip sizes (XS, S, M, L) included",
-          "Reusable and washable silicone",
-          "Designed with side sleepers in mind",
-        ],
-        cons: [
-          "Lower rated reduction than NRR 33 foam plugs",
-          "Can still fall out for some people",
-          "Costs more per pair than a jar of foam",
-        ],
-        bestFor: "Side sleepers and anyone who wants one pair that lasts months.",
-        skipIf: "You need the absolute highest blocking and don't mind rolling foam nightly.",
-      },
-      {
         productSlug: "macks-ultra-soft-foam-earplugs",
-        label: "Best foam for maximum blocking",
+        label: "Best overall",
         verdict:
-          "Mack's Ultra Soft 50-pair is the foam default. NRR 33 dB, slow-recovery comfort foam, and made in the USA. The large jar lasts a long time and costs less than one reusable pair.",
+          "Mack's Ultra Soft 50-pair is our Best Overall earplug. NRR 33 dB, slow-recovery comfort foam, and made in the USA. The large jar lasts a long time and costs less than one reusable pair.",
         pros: [
           "NRR 33 dB — among the highest for consumer foam",
           "50 pairs in a flip-top jar",
@@ -619,6 +600,25 @@ export const buyerGuides: Guide[] = [
         ],
         bestFor: "Loud snoring, travel, or anyone who wants maximum blocking cheaply.",
         skipIf: "You hate the feel of foam in your ear or want something reusable.",
+      },
+      {
+        productSlug: "loop-quiet-earplugs",
+        label: "Best for side sleepers",
+        verdict:
+          "The Loop Quiet 2 is our side-sleeper suggestion. Flexible silicone, four tip sizes, and a carry case. Its rating is lower than the best foam, but many side sleepers say in reviews that it stays comfortable longer.",
+        pros: [
+          "24 dB SNR noise reduction per the listing",
+          "Four tip sizes (XS, S, M, L) included",
+          "Reusable and washable silicone",
+          "Designed with side sleepers in mind",
+        ],
+        cons: [
+          "Lower rated reduction than NRR 33 foam plugs",
+          "Can still fall out for some people",
+          "Costs more per pair than a jar of foam",
+        ],
+        bestFor: "Side sleepers and anyone who wants one pair that lasts months.",
+        skipIf: "You need the absolute highest blocking and don't mind rolling foam nightly.",
       },
       {
         productSlug: "flents-protechs-quiet-time-foam-ear",

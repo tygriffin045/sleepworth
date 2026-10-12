@@ -45,10 +45,10 @@ export const categories: Category[] = [
   },
   {
     slug: "blackout-curtains-masks",
-    name: "Blackout Curtains / Sleep Masks",
-    shortLabel: "Darkness",
+    name: "Blackout Curtains & Liners",
+    shortLabel: "Blackout",
     description:
-      "True darkness is underrated. Curtains handle the room; masks handle travel and stubborn light leaks. Contoured cups beat flat masks for side sleepers who hate eyelid pressure. “Blackout” on a label is rarely 100% without overlapping panels.",
+      "True darkness is underrated. Blackout curtains and liners handle the room; for masks, see our Sleep Masks category. “Blackout” on a label is rarely 100% without overlapping panels and wide-enough rods.",
   },
   {
     slug: "white-noise-sound-machines",
