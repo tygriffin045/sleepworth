@@ -6,18 +6,18 @@ import { products, getProductsByCategory } from "./products";
  * Picks marked in TOP10_BESTSELLERS appeared on the matching Amazon Best Sellers list when checked.
  */
 export const TOP10: Record<string, string[]> = {
-  "pillows": ["coop-original-adjustable-pillow", "coop-eden-pillow", "coop-eden-cool-plus", "beckham-hotel-collection-pillows", "purple-harmony-pillow", "tempur-pedic-tempur-cloud-pillow", "eli-elm-contoured-pillow", "utopia-bedding-gusset-bed-pillow", "jollyvogue-pillows-queen-size-set-of", "sasttie-firm-pillows-queen-size-set"],
+  "pillows": ["coop-original-adjustable-pillow", "coop-eden-pillow", "coop-eden-cool-plus", "beckham-hotel-collection-pillows", "purple-harmony-pillow", "tempur-pedic-tempur-cloud-pillow", "sidney-sleep-curved-pillow", "utopia-bedding-gusset-bed-pillow", "jollyvogue-pillows-queen-size-set-of", "sasttie-firm-pillows-queen-size-set"],
   "mattress-toppers": ["linenspa-2-inch-gel-memory-foam-topper", "linenspa-3-inch-gel-memory-foam-topper", "tempur-adapt-cooling-topper", "latex-mattress-topper-2-inch", "bedlore-queen-mattress-topper", "niagara-sleep-solution-100-cotton-top", "mlily-ego-3-inch-queen-mattress", "olixis-2-inch-twin-cooling-gel", "sinweek-2-inch-gel-memory-foam", "whatsbedding-4-inch-memory-foam-mattress"],
-  "sheets-bedding": ["amazon-basics-microfiber-sheet-set", "shilucheng-cotton-sheet-set", "beckham-hotel-collection-sheets", "down-alternative-comforter", "percale-cotton-sheet-set", "cgk-unlimited-queen-size-4-piece", "amazon-basics-lightweight-super-soft-breathable", "utopia-bedding-queen-sheets-set", "mellanni-iconic-4-piece-bed-sheet", "lane-linen-queen-sheets-100-organic"],
-  "mattress-protectors": ["saferest-mattress-protector", "utopia-bamboo-mattress-protector", "zippered-mattress-encasement", "pillow-protector-pair", "bedlore-waterproof-mattress-protector", "utopia-bedding-waterproof-twin-size-mattress", "plushdeluxe-bamboo-waterproof-mattress-protector", "springspirit-queen-size-mattress-protector-waterproof", "bedlore-waterproof-king-size-mattress-protector", "amazon-basics-waterproof-mattress-protector"],
-  "weighted-blankets": ["gravity-weighted-blanket-15lb", "ynm-weighted-blanket-15lb", "cooling-weighted-blanket", "weighted-blanket-20lb", "yescool-weighted-blanket-for-adults-20lbs", "l-agraty-weighted-blanket-for-adults", "mr-sandman-cooling-weighted-blanket-for", "topcee-weighted-blanket", "wemore-weighted-blanket-for-adult-15lbs", "an-cooling-weighted-blanket-for-adults"],
+  "sheets-bedding": ["beckham-hotel-collection-sheets", "amazon-basics-microfiber-sheet-set", "lane-linen-450tc-sateen-sheet-set", "down-alternative-comforter", "percale-cotton-sheet-set", "cgk-unlimited-queen-size-4-piece", "amazon-basics-lightweight-super-soft-breathable", "utopia-bedding-queen-sheets-set", "mellanni-iconic-4-piece-bed-sheet", "lane-linen-queen-sheets-100-organic"],
+  "mattress-protectors": ["saferest-mattress-protector", "utopia-waterproof-mattress-protector", "zippered-mattress-encasement", "pillow-protector-pair", "bedlore-waterproof-mattress-protector", "utopia-bedding-waterproof-twin-size-mattress", "plushdeluxe-bamboo-waterproof-mattress-protector", "springspirit-queen-size-mattress-protector-waterproof", "bedlore-waterproof-king-size-mattress-protector", "amazon-basics-waterproof-mattress-protector"],
+  "weighted-blankets": ["ynm-weighted-blanket-15lb", "gravity-weighted-blanket-15lb", "cooling-weighted-blanket", "weighted-blanket-20lb", "yescool-weighted-blanket-for-adults-20lbs", "l-agraty-weighted-blanket-for-adults", "mr-sandman-cooling-weighted-blanket-for", "topcee-weighted-blanket", "wemore-weighted-blanket-for-adult-15lbs", "an-cooling-weighted-blanket-for-adults"],
   "cooling-bedding": ["cooling-bamboo-sheet-set", "eucalyptus-lyocell-sheets", "cooling-mattress-pad", "cooling-comforter-insert", "downcool-comforters-queen-size", "hyleory-queen-comforter", "pure-bamboo-king-sheets", "bedsure-queen-sheet-set-4-pieces", "cohome-all-season-queen-size-cooling", "comfort-spaces-100-cotton-percale-sheets"],
-  "blackout-curtains-masks": ["nicetown-blackout-curtains", "manta-sleep-mask", "alaska-bear-sleep-mask", "mzoo-contoured-sleep-mask", "blackout-curtain-liner", "100-blackout-shield-linen-total-blackout", "myhalos-sleep-mask-for-men-and", "chrisdowa-blackout-curtains-for-bedroom-and", "miulee-100-blackout-linen-curtains-for", "miulee-blackout-curtains-for-bedroom-2"],
+  "blackout-curtains-masks": ["nicetown-blackout-curtains", "alaska-bear-sleep-mask", "mzoo-contoured-sleep-mask", "blackout-curtain-liner", "100-blackout-shield-linen-total-blackout", "myhalos-sleep-mask-for-men-and", "chrisdowa-blackout-curtains-for-bedroom-and", "miulee-100-blackout-linen-curtains-for", "miulee-blackout-curtains-for-bedroom-2"],
   "white-noise-sound-machines": ["yogasleep-dohm-classic", "lectrofan-classic", "hatch-restore-3", "soundcore-sleep-a20", "magicteam-sound-white-noise-machine-with", "brownnoise-brown-noise-sound-machine-with", "dreamegg-portable-noise-machine-for-baby", "momcozy-smart-baby-sound-machine-with", "babelio-pocket-mini-portable-white-noise", "homedics-soundsleep-white-noise-sound-machine"],
-  "bedtime-lighting": ["philips-smartsleep-hf3520", "hatch-restore-lighting", "dimmable-bedside-lamp", "red-night-light-sleep", "odokee-sunrise-alarm-clock-white-noise", "peakeep-night-light-digital-alarm-clock", "jall-full-screen-wake-up-light", "wkzay-sunrise-alarm-clock-with-sound", "reacher-wood-grain-sunrise-alarm-clock", "vicsoon-sunrise-alarm-clock-with-wake"],
-  "sleep-air-humidity": ["levoit-lv600s-humidifier", "honeywell-hul570w-humidifier", "bedroom-air-purifier-quiet", "levoit-top-fill-humidifiers-for-bedroom", "dreo-3l-humidifiers-for-bedroom", "coway-air-purifier-for-home-up", "frida-3-in-1-cool-mist", "voopnu-air-purifiers-for-home", "dreo-4l-humidifiers-for-bedroom", "winix-5510-air-purifier-new-generation"],
-  "sleep-masks": ["loop-quiet", "mzoo-luxury-sleep-mask-for-women", "nodpod-patented-gentle-pressure-sleep-mask", "fygrip-3d-eye-mask-sleep-mask", "litbear-sleep-mask-for-side-sleeper", "beevines-100-mulberry-silk-sleep-mask", "vynix-sleep-mask-for-men-women", "lky-digital-sleep-mask-for-side", "moeaseii-sleep-mask-total-blackout-3d", "facemoon-3d-blackout-weighted-sleep-mask"],
-  "earplugs": ["loop-quiet-earplugs", "macks", "flents-protechs-quiet-time-foam-ear", "loop-switch-2-adjustable-ear-plugs", "mack-s-pillow-soft-silicone-earplugs", "lysian-soft-foam-ear-plugs-for", "peace-quiet-pq-wax-ear-plugs", "loop-engage-2-ear-plugs", "justrvn-ear-plugs-for-sleeping", "clxynd-ear-plugs-for-sleeping-noise"],
+  "bedtime-lighting": ["odokee-sunrise-alarm-clock-white-noise", "philips-smartsleep-hf3520", "dimmable-bedside-lamp", "auvon-motion-night-light", "peakeep-night-light-digital-alarm-clock", "jall-full-screen-wake-up-light", "wkzay-sunrise-alarm-clock-with-sound", "reacher-wood-grain-sunrise-alarm-clock", "vicsoon-sunrise-alarm-clock-with-wake"],
+  "sleep-air-humidity": ["levoit-top-fill-humidifiers-for-bedroom", "levoit-lv600s-humidifier", "honeywell-hul430-humidifier", "bedroom-air-purifier-quiet", "dreo-3l-humidifiers-for-bedroom", "coway-air-purifier-for-home-up", "frida-3-in-1-cool-mist", "voopnu-air-purifiers-for-home", "dreo-4l-humidifiers-for-bedroom", "winix-5510-air-purifier-new-generation"],
+  "sleep-masks": ["mzoo-luxury-sleep-mask-for-women", "nodpod-patented-gentle-pressure-sleep-mask", "fygrip-3d-eye-mask-sleep-mask", "litbear-sleep-mask-for-side-sleeper", "beevines-100-mulberry-silk-sleep-mask", "vynix-sleep-mask-for-men-women", "lky-digital-sleep-mask-for-side", "moeaseii-sleep-mask-total-blackout-3d", "facemoon-3d-blackout-weighted-sleep-mask", "manta-sleep-mask"],
+  "earplugs": ["macks-ultra-soft-foam-earplugs", "loop-quiet-earplugs", "flents-protechs-quiet-time-foam-ear", "loop-switch-2-adjustable-ear-plugs", "mack-s-pillow-soft-silicone-earplugs", "lysian-soft-foam-ear-plugs-for", "peace-quiet-pq-wax-ear-plugs", "loop-engage-2-ear-plugs", "justrvn-ear-plugs-for-sleeping", "clxynd-ear-plugs-for-sleeping-noise"],
 };
 
 export const TOP10_BESTSELLERS: Record<string, string[]> = {
@@ -29,10 +29,10 @@ export const TOP10_BESTSELLERS: Record<string, string[]> = {
   "cooling-bedding": ["cooling-bamboo-sheet-set", "downcool-comforters-queen-size", "hyleory-queen-comforter", "pure-bamboo-king-sheets", "bedsure-queen-sheet-set-4-pieces", "cohome-all-season-queen-size-cooling", "comfort-spaces-100-cotton-percale-sheets"],
   "blackout-curtains-masks": ["nicetown-blackout-curtains", "100-blackout-shield-linen-total-blackout", "myhalos-sleep-mask-for-men-and", "chrisdowa-blackout-curtains-for-bedroom-and", "miulee-100-blackout-linen-curtains-for", "miulee-blackout-curtains-for-bedroom-2"],
   "white-noise-sound-machines": ["yogasleep-dohm-classic", "magicteam-sound-white-noise-machine-with", "brownnoise-brown-noise-sound-machine-with", "dreamegg-portable-noise-machine-for-baby", "momcozy-smart-baby-sound-machine-with", "babelio-pocket-mini-portable-white-noise", "homedics-soundsleep-white-noise-sound-machine"],
-  "bedtime-lighting": ["hatch-restore-lighting", "odokee-sunrise-alarm-clock-white-noise", "peakeep-night-light-digital-alarm-clock"],
+  "bedtime-lighting": ["odokee-sunrise-alarm-clock-white-noise", "peakeep-night-light-digital-alarm-clock"],
   "sleep-air-humidity": ["levoit-lv600s-humidifier", "bedroom-air-purifier-quiet", "levoit-top-fill-humidifiers-for-bedroom", "dreo-3l-humidifiers-for-bedroom", "coway-air-purifier-for-home-up", "frida-3-in-1-cool-mist", "voopnu-air-purifiers-for-home", "dreo-4l-humidifiers-for-bedroom", "winix-5510-air-purifier-new-generation"],
   "sleep-masks": ["mzoo-luxury-sleep-mask-for-women", "nodpod-patented-gentle-pressure-sleep-mask", "fygrip-3d-eye-mask-sleep-mask", "litbear-sleep-mask-for-side-sleeper", "beevines-100-mulberry-silk-sleep-mask", "vynix-sleep-mask-for-men-women", "lky-digital-sleep-mask-for-side", "moeaseii-sleep-mask-total-blackout-3d", "facemoon-3d-blackout-weighted-sleep-mask"],
-  "earplugs": ["loop-quiet-earplugs", "macks", "flents-protechs-quiet-time-foam-ear", "loop-switch-2-adjustable-ear-plugs", "mack-s-pillow-soft-silicone-earplugs", "lysian-soft-foam-ear-plugs-for", "peace-quiet-pq-wax-ear-plugs", "loop-engage-2-ear-plugs", "justrvn-ear-plugs-for-sleeping", "clxynd-ear-plugs-for-sleeping-noise"],
+  "earplugs": ["loop-quiet-earplugs", "macks-ultra-soft-foam-earplugs", "flents-protechs-quiet-time-foam-ear", "loop-switch-2-adjustable-ear-plugs", "mack-s-pillow-soft-silicone-earplugs", "lysian-soft-foam-ear-plugs-for", "peace-quiet-pq-wax-ear-plugs", "loop-engage-2-ear-plugs", "justrvn-ear-plugs-for-sleeping", "clxynd-ear-plugs-for-sleeping-noise"],
 };
 
 export function getTopPicks(category: string): Product[] {
@@ -41,4 +41,49 @@ export function getTopPicks(category: string): Product[] {
   return slugs
     .map((s) => products.find((p) => p.slug === s))
     .filter((p): p is Product => Boolean(p));
+}
+
+export const PICKS: Record<string, { best: string; premium: string; value: string }> = {
+  "pillows": { best: "coop-original-adjustable-pillow", premium: "purple-harmony-pillow", value: "utopia-bedding-gusset-bed-pillow" },
+  "mattress-toppers": { best: "linenspa-2-inch-gel-memory-foam-topper", premium: "tempur-adapt-cooling-topper", value: "sinweek-2-inch-gel-memory-foam" },
+  "sheets-bedding": { best: "beckham-hotel-collection-sheets", premium: "percale-cotton-sheet-set", value: "amazon-basics-microfiber-sheet-set" },
+  "mattress-protectors": { best: "saferest-mattress-protector", premium: "plushdeluxe-bamboo-waterproof-mattress-protector", value: "amazon-basics-waterproof-mattress-protector" },
+  "weighted-blankets": { best: "ynm-weighted-blanket-15lb", premium: "gravity-weighted-blanket-15lb", value: "l-agraty-weighted-blanket-for-adults" },
+  "cooling-bedding": { best: "cooling-bamboo-sheet-set", premium: "eucalyptus-lyocell-sheets", value: "comfort-spaces-100-cotton-percale-sheets" },
+  "blackout-curtains-masks": { best: "nicetown-blackout-curtains", premium: "100-blackout-shield-linen-total-blackout", value: "chrisdowa-blackout-curtains-for-bedroom-and" },
+  "white-noise-sound-machines": { best: "yogasleep-dohm-classic", premium: "hatch-restore-3", value: "magicteam-sound-white-noise-machine-with" },
+  "bedtime-lighting": { best: "odokee-sunrise-alarm-clock-white-noise", premium: "philips-smartsleep-hf3520", value: "auvon-motion-night-light" },
+  "sleep-air-humidity": { best: "levoit-top-fill-humidifiers-for-bedroom", premium: "levoit-lv600s-humidifier", value: "dreo-3l-humidifiers-for-bedroom" },
+  "sleep-masks": { best: "mzoo-luxury-sleep-mask-for-women", premium: "manta-sleep-mask", value: "fygrip-3d-eye-mask-sleep-mask" },
+  "earplugs": { best: "macks-ultra-soft-foam-earplugs", premium: "loop-quiet-earplugs", value: "flents-protechs-quiet-time-foam-ear" },
+};
+
+export function getThreePicks(category: string) {
+  const m = PICKS[category];
+  if (!m) return null;
+  const find = (s: string) => products.find((p) => p.slug === s);
+  const best = find(m.best), premium = find(m.premium), value = find(m.value);
+  if (!best || !premium || !value) return null;
+  return { best, premium, value };
+}
+
+/** Home page Top 10: the Best Overall pick from ten of the twelve sleep categories. */
+export const HOME_TOP10: { category: string; role: "best" | "premium" }[] = [
+  { category: "pillows", role: "best" },
+  { category: "mattress-toppers", role: "best" },
+  { category: "sheets-bedding", role: "best" },
+  { category: "mattress-protectors", role: "best" },
+  { category: "weighted-blankets", role: "best" },
+  { category: "cooling-bedding", role: "best" },
+  { category: "blackout-curtains-masks", role: "best" },
+  { category: "sleep-masks", role: "best" },
+  { category: "white-noise-sound-machines", role: "best" },
+  { category: "earplugs", role: "best" },
+];
+export const HOME_TOP10_CATEGORIES = HOME_TOP10.map((h) => h.category);
+
+export function getHomeTop10(): Product[] {
+  return HOME_TOP10.map((h) => products.find((p) => p.slug === PICKS[h.category][h.role])).filter(
+    (p): p is Product => Boolean(p),
+  );
 }

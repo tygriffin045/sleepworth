@@ -558,7 +558,7 @@ export const buyerGuides: Guide[] = [
       },
       {
         label: "Best foam for maximum blocking",
-        productSlug: "macks",
+        productSlug: "macks-ultra-soft-foam-earplugs",
         why: "NRR 33 dB, 50 pairs, slow-recovery foam made in the USA.",
       },
       {
@@ -569,7 +569,7 @@ export const buyerGuides: Guide[] = [
     ],
     productSlugs: [
       "loop-quiet-earplugs",
-      "macks",
+      "macks-ultra-soft-foam-earplugs",
       "flents-protechs-quiet-time-foam-ear",
     ],
     sections: [
@@ -607,7 +607,7 @@ export const buyerGuides: Guide[] = [
         skipIf: "You need the absolute highest blocking and don't mind rolling foam nightly.",
       },
       {
-        productSlug: "macks",
+        productSlug: "macks-ultra-soft-foam-earplugs",
         label: "Best foam for maximum blocking",
         verdict:
           "Mack's Ultra Soft 50-pair is the foam default. NRR 33 dB, slow-recovery comfort foam, and made in the USA. The large jar lasts a long time and costs less than one reusable pair.",
