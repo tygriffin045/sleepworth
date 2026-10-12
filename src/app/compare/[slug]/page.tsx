@@ -117,7 +117,7 @@ export default async function ComparePage({ params }: Props) {
         <table className="min-w-full text-left text-sm">
           <thead className="bg-slate-50 text-xs uppercase tracking-wider text-slate-500">
             <tr>
-              {table.columns.filter((col) => col.key !== "priceBand").map((col) => (
+              {table.columns.map((col) => (
                 <th key={col.key} className="px-4 py-3 font-semibold">
                   {col.label}
                 </th>
@@ -153,9 +153,10 @@ export default async function ComparePage({ params }: Props) {
                       href={href}
                       target="_blank"
                       rel="nofollow sponsored noopener noreferrer"
+                      aria-label={`Check price on Amazon: ${product.name}`}
                       className="inline-flex min-h-10 items-center whitespace-nowrap rounded-full bg-indigo-700 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-800"
                     >
-                      Check price
+                      Check price on Amazon
                     </a>
                   </td>
                 </tr>

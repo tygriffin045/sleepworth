@@ -63,7 +63,7 @@ export const hubs: Hub[] = [
       "Streetlight and early-sun fixes for renters: curtains that actually overlap, liners behind decorative panels, and masks for stubborn leaks.",
     intro: [
       "“Blackout” on a label is not 100% if panels do not overlap or light leaks at the edges. Measure width generously; wraparound rods help. Liners keep decorative curtains you already like.",
-      "Masks handle travel and the last light cracks. Contoured cups (Manta / MZOO) beat flat silk for side sleepers who hate eyelid pressure; Alaska Bear wins on soft nightly price.",
+      "Masks handle travel and the last light cracks. Contoured cups (Manta / MZOO) beat flat silk for side sleepers who hate eyelid pressure; Alaska Bear is the soft, low-cost nightly option.",
     ],
     productSlugs: [
       "nicetown-blackout-curtains",

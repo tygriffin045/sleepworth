@@ -19,7 +19,7 @@ const editorialGuides: Guide[] = [
     sections: [
       {
         heading: "Position first — loft second",
-        body: "Side sleepers usually need enough loft to keep the neck in line with the spine (often more than marketing photos suggest). Back sleepers do better with medium loft that does not shove the chin forward. Stomach sleepers need the lowest profile or they crank the neck all night. If you rotate positions, fixed loft is a coin flip — that is why adjustable shredded foam (Coop Original / Eden) is our default for combo sleepers.",
+        body: "Side sleepers usually need enough loft to keep the neck in line with the spine (often more than marketing photos suggest). Back sleepers do better with medium loft that does not shove the chin forward. Stomach sleepers need the lowest profile or they crank the neck all night. If you rotate positions, fixed loft is a coin flip — that is why adjustable shredded foam (Coop Original / Eden) is our default suggestion for combo sleepers.",
       },
       {
         heading: "Fill types without the brochure nonsense",
@@ -59,7 +59,7 @@ const editorialGuides: Guide[] = [
         body: "Sagging coils, deep hammocking, collapsed edges, and a mattress past its useful life. If you wake with lumbar pain that disappears in a hotel or on a couch, more soft foam can make spinal alignment worse. Protect any mattress you keep with a quiet waterproof protector — spills and sweat age foam faster than people admit.",
       },
       {
-        heading: "Budget ladder we actually use",
+        heading: "A budget ladder",
         body: "Budget: egg-crate or thin foam for a short trial. Mid-range: 2–3\" gel memory foam. Higher: natural latex (like Pure Green) when you hate memory-foam sink. Top end: TEMPUR-Adapt when you want signature conforming foam without replacing the whole bed yet. Always measure depth and buy sheets that stretch over mattress + topper.",
       },
     ],
@@ -88,14 +88,14 @@ const editorialGuides: Guide[] = [
       },
       {
         heading: "Sound: pick a philosophy",
-        body: "Want natural non-looping hush? Yogasleep Dohm Classic. Need precise volume and multiple noise colors (including tinnitus masking)? LectroFan. Need light routines plus sound so the phone leaves the nightstand? Hatch Restore 3. Want sunrise without the Hatch ecosystem? Philips SmartSleep HF3520.",
+        body: "Want natural non-looping hush? Yogasleep Dohm Classic. Need precise volume and multiple noise colors? LectroFan. Need light routines plus sound so the phone leaves the nightstand? Hatch Restore 3. Want sunrise without the Hatch ecosystem? Philips SmartSleep HF3520.",
       },
       {
         heading: "Cool air and sane humidity",
-        body: "Cool the room before you buy another cooling sheet SKU. In dry winters, a quiet humidifier with a real sleep mode (Levoit LV600S or the simple manual Honeywell Designer Series) protects throats — if you will clean it. Dirty humidifiers are a health problem, not a sleep upgrade.",
+        body: "Cool the room before you buy another cooling sheet SKU. In dry winters, a quiet humidifier with a sleep mode (Levoit LV600S, or a simple manual Honeywell) can make dry air feel more comfortable — if you will clean it. Manufacturers stress regular cleaning; a neglected tank is not a sleep upgrade.",
       },
       {
-        heading: "Starter kit we recommend most often",
+        heading: "A sensible starter kit",
         body: "Blackout curtains + Dohm or LectroFan covers most bedrooms. Add a sleep mask for travel. Add Hatch or Philips if screens are the wind-down problem. Fix pillow loft after the room stops working against you.",
       },
     ],
@@ -117,7 +117,7 @@ const editorialGuides: Guide[] = [
     sections: [
       {
         heading: "Weight is a starting rule, not a law",
-        body: "About 10% of body weight is a common adult starting point for weighted blankets — then adjust. Gravity's 15 lb blanket is the known-brand pick we trust; YnM is the value experiment. If you already sleep hot, prioritize cooling covers or you will abandon the blanket in a week.",
+        body: "About 10% of body weight is a common adult starting point for weighted blankets — then adjust. Gravity's 15 lb blanket is the known-brand option; YnM is the lower-cost one to try first. If you already sleep hot, prioritize cooling covers or you will abandon the blanket in a week.",
       },
       {
         heading: "Sheets: fiber beats thread-count theater",

@@ -1,9 +1,8 @@
 import type { Guide } from "./types";
 
 /**
- * Buyer-intent guides. Every spec below is taken from the linked Amazon
- * listing (checked 2026-09-27) or our catalog notes — no invented numbers,
- * prices, or ratings.
+ * Buyer-intent guides. Specs come from the linked Amazon listings; no
+ * invented numbers, prices, or ratings.
  */
 export const buyerGuides: Guide[] = [
   {
@@ -64,15 +63,15 @@ export const buyerGuides: Guide[] = [
       },
       {
         heading: "Volume: which one handles loud neighbors",
-        body: "When the problem is traffic, a thin apartment wall, or a snoring partner in the same room, volume headroom decides it. The LectroFan has precise volume steps, so you can run it barely audible or turn it up well past the Dohm. The Dohm's range is limited to its two speeds and how far you open the vents. Published side-by-side tests from other reviewers consistently find LectroFan models go louder than the Dohm Classic. For loud, irregular noise, start with the LectroFan. For a steady hum or quiet suburb, the Dohm is usually plenty.",
+        body: "When the problem is traffic, a thin apartment wall, or a snoring partner in the same room, volume headroom decides it. The LectroFan has precise volume steps, so you can run it barely audible or turn it up well past the Dohm. The Dohm's range is limited to its two speeds and how far you open the vents. Its stepped volume range is wider than the Dohm’s two speeds. For loud, irregular noise, start with the LectroFan. For a steady hum or quiet suburb, the Dohm is usually plenty.",
       },
       {
         heading: "Simplicity, timer, and power",
         body: "The Dohm is one switch and two speeds, with no screen and no app, and it runs until you turn it off. Nothing to program, which is the point. The LectroFan adds a built-in sleep timer and runs on USB power, so it works from a laptop, a USB wall plug, or a hotel nightstand. The Dohm plugs into a standard 120V outlet with its 7-foot cord.",
       },
       {
-        heading: "Tinnitus and light sleepers",
-        body: "Both machines are widely used to mask tinnitus. The LectroFan's fine volume steps make it easier to set the sound just above your tinnitus level without overdoing it; the Dohm suits people who find a real fan more soothing than any recording. If tinnitus is persistent or worsening, see an audiologist — a sound machine masks it, it does not treat it.",
+        heading: "Light sleepers",
+        body: "Light sleepers who wake at small sounds often do best with fine control: the LectroFan's volume steps let you set the sound just loud enough to cover the disturbance. The Dohm suits people who find a real fan more relaxing than any recording. Neither is a medical device; if sleep problems persist, talk to a doctor.",
       },
     ],
     picks: [
@@ -80,7 +79,7 @@ export const buyerGuides: Guide[] = [
         productSlug: "yogasleep-dohm-classic",
         label: "Best natural fan sound",
         verdict:
-          "The original since 1962 and still our pick when someone says digital noise sounds fake. Flip the switch, pick a speed, twist the housing until the tone disappears into the room.",
+          "Yogasleep has made the Dohm since 1962, and it is our suggestion when digital noise sounds fake to you. Flip the switch, pick a speed, twist the housing until the tone disappears into the room.",
         pros: [
           "Real mechanical fan sound — nothing to loop",
           "One switch, two speeds, no app or screen",
@@ -111,7 +110,7 @@ export const buyerGuides: Guide[] = [
           "More buttons to learn than the Dohm",
           "Plastic build feels less substantial",
         ],
-        bestFor: "City bedrooms, thin walls, tinnitus sufferers who want fine volume control, and travelers.",
+        bestFor: "City bedrooms, thin walls, light sleepers who want fine volume control, and travelers.",
         skipIf: "You specifically want the sound of a real fan.",
       },
       {
@@ -173,8 +172,8 @@ export const buyerGuides: Guide[] = [
     ],
     faqs: [
       {
-        q: "Is the Dohm or the LectroFan louder?",
-        a: "The LectroFan. Published side-by-side tests consistently find LectroFan models reach higher volume than the Dohm Classic, and the LectroFan also has finer volume steps. The Dohm's loudness is limited to its two speeds and how open the vents are.",
+        q: "Which has more volume control, the Dohm or the LectroFan?",
+        a: "The LectroFan, which has stepped volume settings from very quiet upward. The Dohm's loudness is limited to its two speeds and how open the vents are.",
       },
       {
         q: "Does the Dohm have a timer?",
@@ -183,10 +182,6 @@ export const buyerGuides: Guide[] = [
       {
         q: "Does the LectroFan loop?",
         a: "No. The LectroFan generates its sounds continuously, so there is no audible loop point. The Dohm uses a real fan, so looping isn't possible.",
-      },
-      {
-        q: "Which is better for tinnitus, Dohm or LectroFan?",
-        a: "Both are used for tinnitus masking. The LectroFan's fine volume steps make it easier to set sound just above your tinnitus level; the Dohm suits people who find a real fan more soothing. For persistent tinnitus, see an audiologist.",
       },
       {
         q: "Which is better for travel?",
@@ -208,12 +203,12 @@ export const buyerGuides: Guide[] = [
     readingTime: "8 min read",
     publishedAt: "2026-10-12",
     verdict:
-      "Buy the Manta Pro if you want floating contoured cups with no eyelid pressure. MZOO is the budget contoured try-before-Manta. Alaska Bear is the soft mulberry-silk nightly cheap option. nodpod adds patented gentle weighted pressure for side or back sleepers. LitBear targets side sleepers with a heightened hollow nose bridge and ultra-thin tilted sides.",
+      "Buy the Manta Pro if you want floating contoured cups with no eyelid pressure. MZOO is the lower-cost contoured option to try first. Alaska Bear is the soft, low-cost mulberry-silk option. nodpod adds gentle weighted pressure for side or back sleepers. LitBear targets side sleepers with a heightened hollow nose bridge and ultra-thin tilted sides.",
     quickPicks: [
       {
         label: "Best contoured / no eyelid pressure",
         productSlug: "manta-sleep-mask",
-        why: "Floating contoured cups — the convert pick for mask skeptics and side sleepers.",
+        why: "Floating contoured cups, a common choice for mask skeptics and side sleepers.",
       },
       {
         label: "Best value contoured",
@@ -228,7 +223,7 @@ export const buyerGuides: Guide[] = [
       {
         label: "Weighted gentle pressure",
         productSlug: "nodpod-patented-gentle-pressure-sleep-mask",
-        why: "Weighted mask listed for side or back sleepers; calm-down claims on the listing.",
+        why: "Weighted mask the listing describes for side or back sleepers.",
       },
       {
         label: "Side-sleeper nose bridge",
@@ -246,11 +241,11 @@ export const buyerGuides: Guide[] = [
     sections: [
       {
         heading: "Why side sleepers need a different mask",
-        body: "On your side, the pillow presses the mask into your temple and can lever cups or silk off your nose. Look for thin or tilted sides, a secure nose bridge, and either floating cups (no eyelid pressure) or a flat silk profile you actually tolerate. Weighted masks add gentle pressure instead of hard foam edges. We may earn a commission from qualifying purchases.",
+        body: "On your side, the pillow presses the mask into your temple and can lever cups or silk off your nose. Look for thin or tilted sides, a secure nose bridge, and either floating cups (no eyelid pressure) or a flat silk profile you actually tolerate. Weighted masks add gentle pressure instead of hard foam edges.",
       },
       {
         heading: "How to choose",
-        body: "Hate anything on your lids: Manta Pro (or MZOO first on a budget). Want soft and cheap for every night: Alaska Bear. Want weighted calm: nodpod. Want a side-sleeper-specific nose bridge and thin temple sides: LitBear. Give any new mask a few nights and use the return window if the fit is wrong.",
+        body: "Hate anything on your lids: Manta Pro (or MZOO first on a budget). Want soft and cheap for every night: Alaska Bear. Want gentle weighted pressure: nodpod. Want a side-sleeper-specific nose bridge and thin temple sides: LitBear. Give any new mask a few nights and use the return window if the fit is wrong.",
       },
     ],
     picks: [
@@ -258,15 +253,15 @@ export const buyerGuides: Guide[] = [
         productSlug: "manta-sleep-mask",
         label: "Best contoured / no eyelid pressure",
         verdict:
-          "Manta Pro’s contoured cups keep fabric off your lashes — the difference that converts people who say they cannot wear sleep masks. It is built for side sleeping and travel, with adjustable cups on many models. It costs more than silk flats and packs bulkier, but for side sleepers and mask skeptics it is the premium default.",
+          "Manta Pro’s contoured cups are designed to keep fabric off your lashes, which buyer reviews often cite as the reason they could finally wear a mask. Manta markets it for side sleeping and travel, with adjustable cups on many models. It costs more than silk flats and may pack bulkier, but for side sleepers and mask skeptics it is our premium suggestion.",
         pros: [
           "No eyelid pressure",
           "Adjustable cups on many models",
-          "Excellent for travel + side sleeping",
+          "Marketed for travel and side sleeping",
         ],
         cons: [
           "Costs more than silk flats",
-          "Bulkier to pack",
+          "Likely bulkier to pack than a flat mask",
         ],
         bestFor: "Side sleepers and mask skeptics.",
         skipIf: "You want the cheapest nightly mask — Alaska Bear.",
@@ -275,15 +270,15 @@ export const buyerGuides: Guide[] = [
         productSlug: "mzoo-contoured-sleep-mask",
         label: "Best value contoured",
         verdict:
-          "MZOO’s 3D contoured mask gives most of the no-pressure benefit at a lower price than Manta. It blocks light well when fitted and works as a travel spare. Build quality sits below Manta and strap comfort varies — use Amazon’s return window if the cavity or strap is wrong for your face.",
+          "MZOO’s 3D contoured mask gives most of the no-pressure benefit at a lower price than Manta. Buyer reviews say it blocks light well when it fits, and it makes a reasonable travel spare. It may not feel as solid as Manta, and strap comfort can vary — use Amazon’s return window if the cavity or strap is wrong for your face.",
         pros: [
           "Contoured on a budget",
-          "Blocks light well when fitted",
+          "Reviewers report good light blocking when fitted",
           "Good travel spare",
         ],
         cons: [
-          "Build quality below Manta",
-          "Strap comfort varies",
+          "May feel less solid than Manta",
+          "Strap comfort may vary by face shape",
         ],
         bestFor: "Trying contoured design before spending Manta money.",
         skipIf: "You already know you want Manta's adjustability.",
@@ -292,14 +287,14 @@ export const buyerGuides: Guide[] = [
         productSlug: "alaska-bear-sleep-mask",
         label: "Best soft silk / nightly cheap",
         verdict:
-          "Alaska Bear is the soft mulberry-silk nightly mask when Manta feels like overkill. It is light on the face, adjustable, and packs flat. Restless side sleepers who press hard into the pillow may still prefer contoured cups — flat or softly contoured silk can shift.",
+          "Alaska Bear is the soft mulberry-silk nightly mask when Manta feels like overkill. The listing describes it as lightweight and adjustable, and it packs flat. Restless side sleepers who press hard into the pillow may still prefer contoured cups — flat or softly contoured silk can shift.",
         pros: [
-          "Excellent price",
+          "Low cost",
           "Soft silk face feel",
           "Packs flat",
         ],
         cons: [
-          "Can shift for restless side sleepers",
+          "May shift for restless side sleepers",
           "Less structured than Manta",
         ],
         bestFor: "Nightly mask users who want soft and cheap.",
@@ -309,24 +304,24 @@ export const buyerGuides: Guide[] = [
         productSlug: "nodpod-patented-gentle-pressure-sleep-mask",
         label: "Weighted gentle pressure",
         verdict:
-          "nodpod is a patented gentle-pressure weighted eye mask the listing calls ideal for side or back sleepers. Listing claims include clinically tested calm-down results (87% of users felt calmer within five minutes; 83% fell asleep faster) and a mask that stays soft and flexible out of the freezer. We have not tested it hands-on — confirm the variant on the listing.",
+          "nodpod is a weighted eye mask with a patented gentle-pressure design that the listing describes for side or back sleepers. The listing also says it stays soft and flexible when chilled in the freezer. We have not tested it hands-on, so confirm the variant on the listing.",
         pros: [
           "Weighted gentle-pressure design for side or back sleepers",
-          "Listing cites clinically tested calm-down feedback",
+          "Flexible weighted pads rather than hard foam cups",
           "Stays soft and flexible out of the freezer per the listing",
         ],
         cons: [
-          "Not tested hands-on by us yet; details come from the Amazon listing",
-          "Sizes, colors, and bundles vary by listing option",
+          "Puts some pressure on the eyes, so it is not for people who want floating cups",
+          "Sizes, colors, and bundles may vary by listing option",
         ],
         bestFor: "Shoppers who want weighted gentle pressure rather than hard foam cups.",
-        skipIf: "You need a specific size, material, or feature this listing does not offer.",
+        skipIf: "You want nothing touching your eyelids; pick contoured cups instead.",
       },
       {
         productSlug: "litbear-sleep-mask-for-side-sleeper",
         label: "Side-sleeper nose bridge",
         verdict:
-          "LitBear’s side-sleeper mask lists a heightened 22 mm adaptive hollow nose bridge, 15° tilt ultra-thin sides (listing claims they can reduce 90% of temple pressure), and deep 12 mm 3D contoured cups for blinking space. Lining is smooth cooling fabric over 6-layer low-rebound memory foam. We have not tested it hands-on — confirm fit and variant before you buy.",
+          "LitBear’s side-sleeper mask lists a heightened 22 mm adaptive hollow nose bridge, 15° tilted ultra-thin sides meant to ease temple pressure, and deep 12 mm 3D contoured cups for blinking space. Lining is smooth cooling fabric over 6-layer low-rebound memory foam. We have not tested it hands-on — confirm fit and variant before you buy.",
         pros: [
           "22 mm adaptive hollow nose bridge for nose fit",
           "15° ultra-thin tilted sides aimed at temple pressure",
@@ -334,11 +329,11 @@ export const buyerGuides: Guide[] = [
           "Cooling fabric lining with soft memory foam",
         ],
         cons: [
-          "Not tested hands-on by us yet; details come from the Amazon listing",
-          "Sizes, colors, and bundles vary by listing option",
+          "Memory-foam cups may feel warm for some sleepers",
+          "Fit around the nose bridge may vary by face shape",
         ],
         bestFor: "Side sleepers focused on nose-bridge seal and thin temple sides.",
-        skipIf: "You need a specific size, material, or feature this listing does not offer.",
+        skipIf: "You prefer a thin, flat silk mask.",
       },
     ],
     criteria: [
@@ -370,7 +365,7 @@ export const buyerGuides: Guide[] = [
       },
       {
         q: "Are weighted sleep masks good for side sleepers?",
-        a: "nodpod’s listing describes it as an ideal weighted sleep mask for side or back sleepers and cites calm-down feedback. It is a different feel from floating cups — skip it if you specifically need no pressure on the eyes.",
+        a: "nodpod’s listing describes it as a weighted sleep mask for side or back sleepers. It is a different feel from floating cups — skip it if you specifically need no pressure on the eyes.",
       },
       {
         q: "Is silk or contoured better for side sleeping?",
@@ -429,7 +424,7 @@ export const buyerGuides: Guide[] = [
       },
       {
         heading: "Which one actually sleeps cooler",
-        body: "Neither is air conditioning. Both breathe far better than polyester microfiber and feel cool when you first get in. The difference shows up over the night: hot sleepers who wake up damp consistently report that lyocell handles moisture better and feels less clammy by morning, while bamboo rayon wins on softness and drape. If you run warm but stay dry, bamboo is usually enough. If sweat is the real problem, spend the extra on lyocell.",
+        body: "Neither is air conditioning. Both breathe far better than polyester microfiber and feel cool when you first get in. The difference shows up over the night: many hot sleepers who wake up damp report that lyocell handles moisture better and feels less clammy by morning, while bamboo rayon wins on softness and drape. If you run warm but stay dry, bamboo is usually enough. If sweat is the real problem, spend the extra on lyocell.",
       },
       {
         heading: "Durability and care",
@@ -441,7 +436,7 @@ export const buyerGuides: Guide[] = [
         productSlug: "eucalyptus-lyocell-sheets",
         label: "Best eucalyptus (for night sweats)",
         verdict:
-          "Our pick when sweat, not just heat, is waking you up. Stylinen's set is 100% TENCEL lyocell with OEKO-TEX certification and deep 16-inch pockets.",
+          "Our suggestion when sweat, not just heat, is waking you up. Stylinen's set is 100% TENCEL lyocell with OEKO-TEX certification and deep 16-inch pockets.",
         pros: [
           "100% TENCEL lyocell from eucalyptus",
           "OEKO-TEX Standard 100 certified",
@@ -453,14 +448,14 @@ export const buyerGuides: Guide[] = [
           "Wrinkles more than microfiber",
           "The slick feel isn't for everyone",
         ],
-        bestFor: "Night sweats, humid climates, and sensitive skin.",
+        bestFor: "Sweaty sleepers and humid climates.",
         skipIf: "You're on a tight budget or love crisp cotton.",
       },
       {
         productSlug: "cooling-bamboo-sheet-set",
         label: "Best bamboo (softest for the money)",
         verdict:
-          "The upgrade we recommend first for warm sleepers leaving microfiber or sateen. Bedsure PureWoven is 100% rayon derived from bamboo, OEKO-TEX certified, with a fitted sheet for mattresses up to 16 inches.",
+          "The upgrade we suggest first for warm sleepers leaving microfiber or sateen. Bedsure PureWoven is 100% rayon derived from bamboo, OEKO-TEX certified, with a fitted sheet for mattresses up to 16 inches.",
         pros: [
           "100% rayon derived from bamboo",
           "OEKO-TEX Standard 100 certified",
@@ -591,7 +586,7 @@ export const buyerGuides: Guide[] = [
         productSlug: "loop-quiet-earplugs",
         label: "Best reusable for most sleepers",
         verdict:
-          "The Loop Quiet 2 is the reusable pick we point most people toward. Flexible silicone, four tip sizes, and a carry case. It blocks less than the best foam but stays comfortable longer for many side sleepers.",
+          "The Loop Quiet 2 is the reusable option we suggest for most people. Flexible silicone, four tip sizes, and a carry case. Its rating is lower than the best foam, but many side sleepers say in reviews that it stays comfortable longer.",
         pros: [
           "24 dB SNR noise reduction per the listing",
           "Four tip sizes (XS, S, M, L) included",
@@ -659,7 +654,7 @@ export const buyerGuides: Guide[] = [
       },
       {
         heading: "Fit first",
-        body: "A plug that doesn't seal does nothing. Use the size guide, roll foam tightly, and test during the day before you rely on them overnight.",
+        body: "A plug that doesn't seal does nothing. Use the size guide, roll foam tightly, and try them during the day before you rely on them overnight.",
       },
     ],
     faqs: [
@@ -674,10 +669,6 @@ export const buyerGuides: Guide[] = [
       {
         q: "Can I wash the Loop Quiet 2?",
         a: "Yes. The listing describes them as reusable and washable. Foam plugs are single-use.",
-      },
-      {
-        q: "Do earplugs help with tinnitus?",
-        a: "They can reduce external noise that competes with tinnitus, but they do not treat tinnitus. If tinnitus is new or worsening, see a doctor or audiologist.",
       },
     ],
   },
