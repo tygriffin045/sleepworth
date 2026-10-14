@@ -47,7 +47,7 @@ for (const c of categories) {
   for (const s of list) if (!slugs.has(s)) errors.push(`${c.slug}: Top 10 slug not found: ${s}`);
   const n = getTopPicks(c.slug).length;
   // Sleep wave 1: these two lists have only 9 in-category products with real ASINs (no new sourcing allowed).
-  const SHORT_OK = new Set(["blackout-curtains-masks", "bedtime-lighting", "sheets-bedding"]);
+  const SHORT_OK = new Set<string>([]);
   if (n !== 10) {
     if (n >= 6 && n < 10 && SHORT_OK.has(c.slug)) warnings.push(`${c.slug}: list has ${n} items (allowed short list)`);
     else errors.push(`${c.slug}: Top 10 has ${n} items (need exactly 10)`);
