@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getGuide, guides } from "@/data/guides";
-import { getProduct } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
 import { RelatedNav } from "@/components/RelatedNav";
+import { getProduct } from "@/data/products";
+import { StickyAffiliateBar } from "@/components/StickyAffiliateBar";
 import { JsonLd } from "@/components/JsonLd";
 import { hubs } from "@/data/hubs";
 import { compares } from "@/data/compares";
@@ -147,6 +148,22 @@ export default async function GuidePage({ params }: Props) {
       {isBuyerGuide && <GuidePicks guide={guide} />}
       {isBuyerGuide && <GuideCriteria guide={guide} />}
       {isBuyerGuide && <GuideFaq guide={guide} />}
+
+      {guide.slug.startsWith("gifts-") && guide.quickPicks?.[0] && (() => {
+        const lead = getProduct(guide.quickPicks[0].productSlug);
+        if (!lead) return null;
+        return (
+          <StickyAffiliateBar
+            productSlug={lead.slug}
+            productName={lead.name}
+            amazonAsin={lead.amazonAsin}
+            amazonQuery={lead.amazonQuery}
+            label="Best overall gift"
+            placement="guide_sticky"
+            showAfterId="quick-picks"
+          />
+        );
+      })()}
 
       <RelatedNav title="Related hubs & compares" links={crossLinks} />
 

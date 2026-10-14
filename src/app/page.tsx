@@ -293,6 +293,12 @@ export default function HomePage() {
         </ul>
       </section>
 
+      <p className="rounded-2xl border border-indigo-200 bg-indigo-50/60 p-4 text-sm text-slate-700">
+        <span className="font-semibold text-slate-900">Holiday gift guide: </span>
+        <Link href="/guides/gifts-for-better-sleep" className="font-semibold text-indigo-700 underline underline-offset-4">
+          Gifts for better sleep →
+        </Link>
+      </p>
       <section>
         <h2 className="font-serif text-3xl text-slate-900">Buying guides</h2>
         <p className="mt-1 text-slate-600">
