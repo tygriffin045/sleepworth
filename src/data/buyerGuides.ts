@@ -6,6 +6,118 @@ import type { Guide } from "./types";
  */
 export const buyerGuides: Guide[] = [
   {
+    slug: "gifts-for-better-sleep",
+    targetQuery: "gifts for better sleep",
+    metaTitle: "Gifts for Better Sleep (2026 Holiday Guide)",
+    title: "Gifts for better sleep: practical picks people tend to use",
+    description:
+      "Holiday gift ideas for anyone who sleeps badly, from earplugs and silk masks to sound machines, adjustable pillows and weighted blankets, sorted by $, $$ and $$$ budget tier.",
+    readingTime: "6 min read",
+    publishedAt: "2026-10-14",
+    productSlugs: ["yogasleep-dohm-classic", "hatch-restore-3", "manta-sleep-mask", "coop-original-adjustable-pillow", "ynm-weighted-blanket-15lb", "loop-quiet-earplugs", "alaska-bear-sleep-mask", "macks-ultra-soft-foam-earplugs"],
+    verdict:
+      "If you don't know how someone sleeps, a sound machine like the Yogasleep Dohm Classic is an easy gift: it suits most bedrooms and needs no app. Earplugs and sleep masks make good stocking stuffers, and an adjustable pillow or weighted blanket is a bigger gift that works best when you know the person's preferences.",
+    quickPicks: [
+      { label: "Best overall gift", productSlug: "yogasleep-dohm-classic", why: "A real-fan white noise machine with simple physical controls ($$)." },
+      { label: "Premium gift", productSlug: "hatch-restore-3", why: "Sound machine, sunrise alarm and wind-down light in one ($$$). Some content needs a subscription." },
+      { label: "Budget-friendly stocking stuffer", productSlug: "macks-ultra-soft-foam-earplugs", why: "50 pairs of soft foam earplugs, NRR 33 per the maker ($)." },
+    ],
+    sections: [
+      {
+        heading: "Pick for the problem, not the person",
+        body: "Noise, light, temperature and pillow fit are the usual sleep complaints. A sound machine or earplugs may help a light sleeper with a noisy street or partner; a mask or curtains may help with early light. Pillows and weighted blankets are more personal, so they are safer bets only when you know the person's sleep position or that they want deep pressure.",
+      },
+      {
+        heading: "Safety notes",
+        body: "Weighted blankets are not for infants or young children; check the maker's age and weight limits, and a common adult starting point is about 10% of body weight. If a sound machine will be used near a baby, keep the volume low, place it away from the crib, and follow your pediatrician's guidance.",
+      },
+    ],
+    picks: [
+      {
+        productSlug: "yogasleep-dohm-classic",
+        label: "Best overall gift ($$)",
+        verdict: "The Dohm makes its sound with a real fan, so there are no digital loops. It has two speeds and a twist collar for tone, with no app to set up, which may make it an easy gift for most bedrooms.",
+        pros: ["Real fan sound with no loops", "Simple physical controls", "No app or account needed"],
+        cons: ["Only fan sound", "Corded"],
+        bestFor: "Light sleepers who want steady background noise.",
+        skipIf: "They want nature sounds or a travel-size machine.",
+      },
+      {
+        productSlug: "hatch-restore-3",
+        label: "Premium gift ($$$)",
+        verdict: "The Restore 3 combines sleep sounds, a sunrise alarm and wind-down light routines, so it may replace a phone on the nightstand. Some content needs an app subscription, which is worth knowing before you give it.",
+        pros: ["Sound, light and sunrise alarm in one", "Wind-down routines"],
+        cons: ["Some content needs a subscription", "Costs much more than a basic sound machine"],
+        bestFor: "Someone who wants to keep their phone out of the bedroom.",
+        skipIf: "They dislike apps or subscriptions.",
+      },
+      {
+        productSlug: "manta-sleep-mask",
+        label: "Premium sleep mask ($$$)",
+        verdict: "Contoured eye cups keep the fabric off the lashes and adjust to fit, which side sleepers and travelers may find more comfortable than a flat mask. It is bulkier to pack.",
+        pros: ["No pressure on the eyelids", "Adjustable eye cups"],
+        cons: ["Costs much more than most masks", "Bulkier to pack"],
+        bestFor: "Frequent travelers and people who wake with early light.",
+        skipIf: "They already sleep in a dark room.",
+      },
+      {
+        productSlug: "coop-original-adjustable-pillow",
+        label: "Adjustable pillow ($$)",
+        verdict: "The Coop Original's shredded memory-foam fill comes out of a zippered cover, so the loft can be lowered for back or stomach sleeping or kept full for side sleeping. Expect a few nights of adjusting.",
+        pros: ["Adjustable loft: add or remove fill", "Washable cover"],
+        cons: ["Takes some trial and error to set up", "Bulkier and heavier than a down-alternative pillow"],
+        bestFor: "Someone unhappy with their pillow who doesn't mind tinkering.",
+        skipIf: "You don't know their pillow preferences; a gift receipt helps here.",
+      },
+      {
+        productSlug: "ynm-weighted-blanket-15lb",
+        label: "Weighted blanket ($$)",
+        verdict: "A glass-bead blanket offered in many weights and sizes. About 10% of body weight is a common adult starting point. Not for infants or young children; check the maker's age and weight limits.",
+        pros: ["Many weight and size options", "Glass-bead fill"],
+        cons: ["Can sleep warm", "Build can vary between product generations"],
+        bestFor: "An adult who has said they want to try deep pressure.",
+        skipIf: "It is for a child, or they already sleep hot.",
+      },
+      {
+        productSlug: "loop-quiet-earplugs",
+        label: "Reusable earplugs ($$)",
+        verdict: "Reusable silicone plugs with several tip sizes. Many people find them easier to sleep on than foam, though foam usually blocks more noise.",
+        pros: ["Reusable", "Several tip sizes", "Low profile"],
+        cons: ["Blocks less than foam", "Can fall out"],
+        bestFor: "Side sleepers who find foam plugs uncomfortable.",
+        skipIf: "They need maximum blocking for loud snoring.",
+      },
+      {
+        productSlug: "alaska-bear-sleep-mask",
+        label: "Budget-friendly silk mask ($)",
+        verdict: "A mulberry silk mask with an adjustable strap that packs flat. A small add-on or stocking stuffer rather than a main gift.",
+        pros: ["Mulberry silk face", "Adjustable strap", "Packs flat"],
+        cons: ["Flat design touches the eyelids", "Can shift for restless side sleepers"],
+        bestFor: "Stocking stuffers and travel kits.",
+        skipIf: "They want a contoured mask that stays off the eyes.",
+      },
+      {
+        productSlug: "macks-ultra-soft-foam-earplugs",
+        label: "Budget-friendly stocking stuffer ($)",
+        verdict: "50 pairs of low-pressure, slow-release foam plugs with a Noise Reduction Rating of 33 dB, per the maker. Foam fit takes some practice.",
+        pros: ["NRR 33 dB per the maker", "50 pairs in a flip-top jar"],
+        cons: ["Disposable", "Foam fit takes practice"],
+        bestFor: "Anyone sharing a room with a snorer.",
+        skipIf: "They find foam plugs uncomfortable; consider the Loop Quiet 2.",
+      },
+    ],
+    criteria: [
+      { heading: "Know the sleep problem", body: "Noise points to a sound machine or earplugs, light to a mask, and neck pain to a pillow." },
+      { heading: "Keep it low-risk", body: "Pillows and blankets are personal. When unsure, pick a sound machine, mask or earplugs, and include a gift receipt." },
+    ],
+    faqs: [
+      { q: "What is a good sleep gift when I don't know their habits?", a: "A sound machine such as the Yogasleep Dohm Classic, or a sleep mask, tends to suit most people. Pillows and weighted blankets depend more on personal preference." },
+      { q: "Are there budget-friendly sleep gifts?", a: "Yes. Mack's Ultra Soft earplugs and the Alaska Bear silk mask sit in the $ tier. Prices change often, so check Amazon for the current price." },
+      { q: "Can a weighted blanket be a gift for a child?", a: "Weighted blankets are not for infants or young children. For older children, check the maker's age and weight limits and talk to a pediatrician first." },
+    ],
+  },
+
+  {
     slug: "dohm-vs-lectrofan",
     targetQuery: "dohm vs lectrofan",
     metaTitle: "Dohm vs LectroFan: Which Sound Machine to Buy",

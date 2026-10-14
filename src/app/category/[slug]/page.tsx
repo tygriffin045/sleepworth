@@ -102,6 +102,12 @@ export default async function CategoryPage({ params }: Props) {
       </div>
       <BadgePicks category={slug} />
       <Top10List items={items} heading={`Top ${items.length} ${category.name}`} />
+      <p className="rounded-2xl border border-indigo-200 bg-indigo-50/60 p-4 text-sm text-slate-700">
+        <span className="font-semibold text-slate-900">Holiday gift guide: </span>
+        <Link href="/guides/gifts-for-better-sleep" className="font-semibold text-indigo-700 underline underline-offset-4">
+          Gifts for better sleep →
+        </Link>
+      </p>
       <RelatedNav title="Related hubs, compares & guides" links={related} />
     </div>
   );

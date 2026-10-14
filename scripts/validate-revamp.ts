@@ -3,6 +3,7 @@
 import { products } from "../src/data/products";
 import { categories } from "../src/data/categories";
 import { TOP10, PICKS, getTopPicks } from "../src/data/top10";
+import { guides as _gg } from "../src/data/guides";
 
 
 const errors: string[] = [];
@@ -67,6 +68,45 @@ for (const c of categories) {
   const top = getTopPicks(c.slug);
   if (v && top.some((p) => p.tier === "$") && v.tier !== "$") errors.push(`${c.slug}: Value ${v.slug} is ${v.tier} but the Top 10 has a $ item`);
   if (new Set(Object.values(pk)).size !== 3) errors.push(`${c.slug}: picks are not 3 distinct products`);
+}
+// Gift-guide gate: 6-10 picks covering all three tiers, real products with ASINs, 2-4 pros / 1-3 cons,
+// a "Best overall gift" quick pick, hedged copy, no price phrasing, and the sleep safety lines.
+{
+  const R: Record<string, number> = { $: 1, $$: 2, $$$: 3 };
+  for (const g of _gg) {
+    if (!g.slug.startsWith("gifts-")) continue;
+    const picks = g.picks ?? [];
+    if (picks.length < 6 || picks.length > 10) errors.push(`guide ${g.slug}: ${picks.length} picks (need 6-10)`);
+    const tiers = new Set<string>();
+    const seen = new Set<string>();
+    for (const pk of picks) {
+      const p = products.find((x) => x.slug === pk.productSlug);
+      if (!p) { errors.push(`guide ${g.slug}: pick not found ${pk.productSlug}`); continue; }
+      if (!p.amazonAsin || p.asinPlaceholder) errors.push(`guide ${g.slug}: ${p.slug} has no real ASIN`);
+      if (seen.has(p.slug)) errors.push(`guide ${g.slug}: duplicate pick ${p.slug}`);
+      seen.add(p.slug); tiers.add(p.tier);
+      if (pk.pros.length < 2 || pk.pros.length > 4) errors.push(`guide ${g.slug}: ${p.slug} has ${pk.pros.length} pros`);
+      if (pk.cons.length < 1 || pk.cons.length > 3) errors.push(`guide ${g.slug}: ${p.slug} has ${pk.cons.length} cons`);
+      const m = pk.label.match(/\((\$+)\)/);
+      if (m && m[1] !== p.tier) errors.push(`guide ${g.slug}: ${p.slug} label says ${m[1]} but tier is ${p.tier}`);
+    }
+    for (const t of ["$", "$$", "$$$"]) if (!tiers.has(t)) errors.push(`guide ${g.slug}: no ${t} pick`);
+    const qp = g.quickPicks ?? [];
+    if (qp[0]?.label !== "Best overall gift") errors.push(`guide ${g.slug}: first quick pick must be "Best overall gift"`);
+    for (const q of qp) if (!seen.has(q.productSlug)) errors.push(`guide ${g.slug}: quick pick ${q.productSlug} is not one of the picks`);
+    const texts = [g.title, g.description, g.verdict ?? "", ...g.sections.map((x) => x.body), ...(g.faqs ?? []).map((f) => f.a), ...qp.map((q) => q.why), ...picks.flatMap((x) => [x.verdict, x.bestFor, x.skipIf, ...x.pros, ...x.cons])];
+    const all = texts.join(" ");
+    for (const t of texts) {
+      const sv = t.match(/\b(you'll love|effortlessly|say goodbye|maximize|guaranteed|the best ever|perfect for everyone|must-have|a safe gift)\b/i);
+      if (sv) errors.push(`guide ${g.slug}: seller voice / unhedged "${sv[0]}": ${t.slice(0, 60)}`);
+      if (/under\s*\$|\$\s*\d/i.test(t)) errors.push(`guide ${g.slug}: price phrasing: ${t.slice(0, 60)}`);
+      if (/\b(cures?|treats?|insomnia relief|guarantees?)\b/i.test(t)) errors.push(`guide ${g.slug}: unhedged health claim: ${t.slice(0, 60)}`);
+    }
+    const cats = new Set(picks.map((x) => products.find((p) => p.slug === x.productSlug)?.category));
+    if (cats.has("weighted-blankets") && !/not for infants or young children/i.test(all)) errors.push(`guide ${g.slug}: weighted blanket without the infants/young children line`);
+    if (cats.has("white-noise-sound-machines") && !/away from the crib/i.test(all)) errors.push(`guide ${g.slug}: sound machine without the baby safety line`);
+    void R;
+  }
 }
 for (const w of warnings) console.warn(`validate-revamp: WARNING ${w}`);
 if (errors.length) {
