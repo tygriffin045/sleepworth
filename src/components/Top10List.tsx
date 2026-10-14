@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Product } from "@/data/types";
 import { AffiliateButton } from "@/components/AffiliateButton";
 import { TierBadge } from "@/components/TierBadge";
+import ImagePlaceholder from "./ImagePlaceholder";
 
 /** Ranked Top 10 with pros and cons for every product. */
 export function Top10List({
@@ -31,7 +32,7 @@ export function Top10List({
             <div className="flex flex-col gap-5 sm:flex-row">
               <div className="flex items-start gap-4 sm:w-56 sm:flex-col">
                 <span className="font-serif text-3xl text-[#4338ca]">#{i + 1}</span>
-                {p.imageUrl && (
+                {p.imageUrl ? ((
                   <Link
                     href={`/products/${p.slug}`}
                     className="relative block aspect-square w-28 overflow-hidden rounded-lg bg-slate-50 sm:w-full"
@@ -45,7 +46,7 @@ export function Top10List({
                       priority={i === 0}
                     />
                   </Link>
-                )}
+                )) : (<ImagePlaceholder name={p.name} category={p.category} className="relative aspect-square w-28 shrink-0 rounded-lg sm:w-full" />)}
               </div>
               <div className="min-w-0 flex-1">
                 {labels?.[i] && (

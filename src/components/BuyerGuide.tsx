@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Guide, Product } from "@/data/types";
 import { getProduct } from "@/data/products";
 import { AffiliateButton } from "@/components/AffiliateButton";
+import ImagePlaceholder from "./ImagePlaceholder";
 
 function productOrThrow(slug: string): Product {
   const p = getProduct(slug);
@@ -110,7 +111,7 @@ export function GuidePicks({ guide }: { guide: Guide }) {
               href={`/products/${p.slug}`}
               className="relative block aspect-square overflow-hidden rounded-xl border border-slate-100 bg-white"
             >
-              {p.imageUrl && (
+              {p.imageUrl ? ((
                 <Image
                   src={p.imageUrl}
                   alt={p.imageAlt}
@@ -119,7 +120,7 @@ export function GuidePicks({ guide }: { guide: Guide }) {
                   className="object-contain p-3"
                   priority={idx === 0}
                 />
-              )}
+              )) : (<ImagePlaceholder name={p.name} category={p.category} fill />)}
             </Link>
             <div>
               <p className="text-xs font-semibold uppercase tracking-wider text-indigo-700">
