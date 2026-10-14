@@ -4,6 +4,7 @@ import type { Product } from "@/data/types";
 import { AffiliateButton } from "@/components/AffiliateButton";
 import { TierBadge } from "@/components/TierBadge";
 import { getThreePicks, getTopPicks } from "@/data/top10";
+import ImagePlaceholder from "./ImagePlaceholder";
 
 const BADGE = {
   best: { label: "Best Overall", cls: "bg-indigo-800 text-white" },
@@ -44,7 +45,7 @@ export function BadgePicks({ category }: { category: string }) {
             >
               {BADGE[kind].label}
             </span>
-            {p.imageUrl && (
+            {p.imageUrl ? ((
               <div className="relative mt-3 aspect-square w-full overflow-hidden rounded-lg bg-slate-50">
                 <Image
                   src={p.imageUrl}
@@ -54,7 +55,7 @@ export function BadgePicks({ category }: { category: string }) {
                   className="object-contain p-3"
                 />
               </div>
-            )}
+            )) : (<ImagePlaceholder name={p.name} category={p.category} className="mt-3 rounded-lg" />)}
             <h3 className="mt-3 font-semibold leading-snug text-slate-900">
               <Link href={`/products/${p.slug}`} className="hover:underline">
                 {p.name}
