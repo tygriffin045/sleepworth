@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getGuideTop10, getRelatedGuideList } from "@/lib/guide-links";
 import { notFound } from "next/navigation";
 import { getGuide, guides } from "@/data/guides";
 import { ProductCard } from "@/components/ProductCard";
@@ -75,6 +76,11 @@ export default async function GuidePage({ params }: Props) {
         kind: "Compare",
       });
     }
+  }
+  const top10 = getGuideTop10(guide);
+  if (top10) crossLinks.unshift({ ...top10, kind: "Top 10" });
+  for (const g of getRelatedGuideList<typeof guide>(guide, 3)) {
+    crossLinks.push({ href: `/guides/${g.slug}`, label: g.title, kind: "Guide" });
   }
   const guideUrl = `${SITE_URL}/guides/${guide.slug}`;
   const articleLd = {
@@ -165,7 +171,7 @@ export default async function GuidePage({ params }: Props) {
         );
       })()}
 
-      <RelatedNav title="Related hubs & compares" links={crossLinks} />
+      <RelatedNav title="Related guides, hubs & compares" links={crossLinks} />
 
       {!isBuyerGuide && mentioned.length > 0 && (
         <section>
