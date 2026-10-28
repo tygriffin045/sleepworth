@@ -1,3 +1,4 @@
+import { BreadcrumbLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { guides } from "@/data/guides";
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     "SleepWorth buying guides: Dohm vs LectroFan, sleep masks for side sleepers, bamboo vs eucalyptus sheets, pillows, mattress toppers, and a quieter, darker bedroom.",
   alternates: { canonical: "/guides" },
   openGraph: {
+      type: "website",
     images: DEFAULT_OG_IMAGES,
     title: "Buying guides · SleepWorth",
     description:
@@ -28,6 +30,7 @@ export const metadata: Metadata = {
 export default function GuidesPage() {
   return (
     <div className="space-y-8">
+      <BreadcrumbLd trail={[["Guides", "/guides"]]} />
       <div>
         <h1 className="font-serif text-4xl text-slate-900">Buying guides</h1>
         <p className="mt-2 text-lg text-slate-600">

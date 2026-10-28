@@ -1,3 +1,4 @@
+import { BreadcrumbLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -89,6 +90,7 @@ export default async function HubPage({ params }: Props) {
 
   return (
     <div className="space-y-10">
+      <BreadcrumbLd trail={[["Best for", "/best"], [hub.title, `/best/${hub.slug}`]]} />
       <JsonLd data={itemListLd} />
       <header className="max-w-3xl">
         <p className="text-xs font-semibold uppercase tracking-wider text-indigo-700">

@@ -1,3 +1,5 @@
+import { DEFAULT_OG_IMAGES } from "@/lib/site";
+import { fit } from "@/lib/meta-fit";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -29,11 +31,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const product = getProduct(slug);
   if (!product) return { title: "Product" };
-  const title = `${product.name} — ${product.bestFor}`;
-  const description = `${product.tagline} ${product.whoItsFor} Editorial SleepWorth pick with clear tradeoffs — no invented scores.`;
+  const title = fit(`${product.name} — ${product.bestFor}`, 55);
+  const description = fit(`${product.tagline} ${product.whoItsFor}`, 160);
   const images = product.imageUrl
     ? [{ url: product.imageUrl, alt: product.imageAlt }]
-    : undefined;
+    : DEFAULT_OG_IMAGES;
   return {
     title,
     description,

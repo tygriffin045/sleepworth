@@ -1,3 +1,5 @@
+import { fit } from "@/lib/meta-fit";
+import { BreadcrumbLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -21,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const category = getCategory(slug);
   if (!category) return { title: "Category" };
   const title = `${category.name} — sleep gear picks`;
-  const description = category.description;
+  const description = fit(category.description, 160);
   return {
     title,
     description,
@@ -68,6 +70,7 @@ export default async function CategoryPage({ params }: Props) {
 
   return (
     <div className="space-y-8">
+      <BreadcrumbLd trail={[[category.name, `/category/${category.slug}`]]} />
       <JsonLd data={itemListLd} />
       <div>
         <p className="text-xs font-semibold uppercase tracking-wider text-indigo-700">

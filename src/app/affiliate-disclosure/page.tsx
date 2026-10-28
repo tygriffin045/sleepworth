@@ -1,3 +1,4 @@
+import { BreadcrumbLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import { DEFAULT_OG_IMAGES, DEFAULT_TWITTER_IMAGES } from "@/lib/site";
 
@@ -27,6 +28,7 @@ export const metadata: Metadata = {
 export default function AffiliateDisclosurePage() {
   return (
     <div className="mx-auto max-w-3xl space-y-6">
+      <BreadcrumbLd trail={[["Affiliate disclosure", "/affiliate-disclosure"]]} />
       <h1 className="font-serif text-4xl text-slate-900">
         Affiliate disclosure
       </h1>

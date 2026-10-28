@@ -1,3 +1,4 @@
+import { BreadcrumbLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { compares } from "@/data/compares";
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     "Side-by-side SleepWorth comparisons for pillows, sound machines, toppers, and darkness tools.",
   alternates: { canonical: "/compare" },
   openGraph: {
+      type: "website",
     images: DEFAULT_OG_IMAGES,
     title: "Compare tables · SleepWorth",
     description:
@@ -28,6 +30,7 @@ export const metadata: Metadata = {
 export default function CompareIndexPage() {
   return (
     <div className="space-y-8">
+      <BreadcrumbLd trail={[["Compare", "/compare"]]} />
       <div>
         <p className="text-xs font-semibold uppercase tracking-wider text-indigo-700">
           Comparisons

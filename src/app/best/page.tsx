@@ -1,3 +1,4 @@
+import { BreadcrumbLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { hubs } from "@/data/hubs";
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     "High-conversion SleepWorth hubs: side sleepers, hot sleepers, apartment blackout, and budget starter kits.",
   alternates: { canonical: "/best" },
   openGraph: {
+      type: "website",
     images: DEFAULT_OG_IMAGES,
     title: "Best for… hubs · SleepWorth",
     description:
@@ -28,6 +30,7 @@ export const metadata: Metadata = {
 export default function BestIndexPage() {
   return (
     <div className="space-y-8">
+      <BreadcrumbLd trail={[["Best for", "/best"]]} />
       <div>
         <p className="text-xs font-semibold uppercase tracking-wider text-indigo-700">
           Use-case hubs

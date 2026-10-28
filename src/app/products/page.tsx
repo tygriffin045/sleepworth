@@ -1,3 +1,4 @@
+import { BreadcrumbLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { products } from "@/data/products";
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
     "Browse 45 SleepWorth sleep gear picks with best-for labels and honest tradeoffs.",
   alternates: { canonical: "/products" },
   openGraph: {
+      type: "website",
     images: DEFAULT_OG_IMAGES,
     title: "All SleepWorth products",
     description:
@@ -44,6 +46,7 @@ export default function ProductsPage() {
 
   return (
     <div className="space-y-8">
+      <BreadcrumbLd trail={[["Products", "/products"]]} />
       <JsonLd data={itemListLd} />
       <div>
         <h1 className="font-serif text-4xl text-slate-900">All products</h1>

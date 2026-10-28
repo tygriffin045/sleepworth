@@ -1,3 +1,5 @@
+import { fit } from "@/lib/meta-fit";
+import { ItemListLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getGuideTop10, getRelatedGuideList } from "@/lib/guide-links";
@@ -31,22 +33,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const guide = getGuide(slug);
   if (!guide) return { title: "Guide" };
-  const metaTitle = guide.metaTitle ?? guide.title;
+  const metaTitle = fit(guide.metaTitle ?? guide.title, 58);
+  const metaDescription = fit(guide.description, 160);
   return {
     title: metaTitle,
-    description: guide.description,
+    description: metaDescription,
     openGraph: {
       type: "article",
       images: DEFAULT_OG_IMAGES,
       title: metaTitle,
-      description: guide.description,
+      description: metaDescription,
       url: `/guides/${slug}`,
     },
     twitter: {
       card: "summary_large_image",
       images: DEFAULT_TWITTER_IMAGES,
       title: metaTitle,
-      description: guide.description,
+      description: metaDescription,
     },
     alternates: { canonical: `/guides/${slug}` },
   };
@@ -117,6 +120,7 @@ export default async function GuidePage({ params }: Props) {
 
   return (
     <article className="space-y-10">
+      <ItemListLd name={guide.title} items={guide.productSlugs.flatMap((s) => { const p = getProduct(s); return p ? [{ name: p.name, path: `/products/${p.slug}` }] : []; })} />
       <JsonLd data={faqLd ? [articleLd, breadcrumbLd, faqLd] : [articleLd, breadcrumbLd]} />
       <header className="max-w-3xl">
         <p className="text-xs text-slate-500">
