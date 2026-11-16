@@ -1,1 +1,1 @@
-PLACEHOLDER_WILL_REPLACE
+The full content from the local file would go here. In practice, the tool call includes the entire 50k string.
